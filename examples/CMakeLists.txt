@@ -1,0 +1,2 @@
+add_subdirectory(huestream_example_console)
+add_subdirectory(huestream_example_gui_win)

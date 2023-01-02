@@ -1,0 +1,63 @@
+diff --git a/include/mbedtls/config.h b/include/mbedtls/config.h
+index d370dbff5..e277b1e93 100644
+--- a/include/mbedtls/mbedtls_config.h
++++ b/include/mbedtls/mbedtls_config.h
+@@ -56,7 +56,10 @@
+  *
+  * Comment to disable the use of assembly code.
+  */
+-#define MBEDTLS_HAVE_ASM
++// Disable assembly to avoid the "inline assembly requires more registers than available" error on Android armeabi
++#ifndef __ARM_ARCH_5TE__
++#    define MBEDTLS_HAVE_ASM
++#endif
+ 
+ /**
+  * \def MBEDTLS_NO_UDBL_DIVISION
+@@ -2273,7 +2276,7 @@
+  *
+  * This modules adds support for the AES-NI instructions on x86-64
+  */
+-#define MBEDTLS_AESNI_C
++//#define MBEDTLS_AESNI_C
+ 
+ /**
+  * \def MBEDTLS_AES_C
+@@ -3015,7 +3018,7 @@
+  *
+  * This modules adds support for the VIA PadLock on x86.
+  */
+-#define MBEDTLS_PADLOCK_C
++//#define MBEDTLS_PADLOCK_C
+ 
+ /**
+  * \def MBEDTLS_PEM_PARSE_C
+  
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 2ab2e01eb..68c43a24c 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -198,7 +198,7 @@ if(CMAKE_COMPILER_IS_GNU)
+         endif()
+     endif()
+     if (GCC_VERSION VERSION_GREATER 7.0 OR GCC_VERSION VERSION_EQUAL 7.0)
+-      set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wformat-overflow=2 -Wformat-truncation")
++      set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wformat-overflow=2 -Wformat-truncation=1")
+     endif()
+     set(CMAKE_C_FLAGS_RELEASE     "-O2")
+     set(CMAKE_C_FLAGS_DEBUG       "-O0 -g3")
+	 
+diff --git a/library/bn_mul.h b/library/bn_mul.h
+index 962d7a97b..478d472df 100644
+--- a/library/bn_mul.h
++++ b/library/bn_mul.h
+@@ -707,7 +707,7 @@
+            "r6", "r7", "r8", "r9", "cc"         \
+          );
+
+-#elif (__ARM_ARCH >= 6) && \
++#elif (__ARM_ARCH >= 8) && \
+     defined (__ARM_FEATURE_DSP) && (__ARM_FEATURE_DSP == 1)
+
+ #define MULADDC_X1_INIT                            \
+ 

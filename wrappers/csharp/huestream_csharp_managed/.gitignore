@@ -1,0 +1,4 @@
+${csharp_bin_dir_dos_style}/*
+${csharp_obj_dir_dos_style}/*
+generated/*
+*.sln

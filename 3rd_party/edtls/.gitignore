@@ -1,0 +1,8 @@
+/build*
+Testing/
+.idea/
+cmake-build-debug/
+
+3rdparty/mbedtls/
+
+3rdparty/googletest

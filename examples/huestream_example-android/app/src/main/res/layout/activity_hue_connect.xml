@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:id="@+id/linear1"
+    android:minWidth="300dp"
+    tools:context=".HueConnectActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_vertical"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:maxLines="1"
+        android:layout_marginBottom="32dp"
+        android:text="@string/button_connect"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000" />
+
+	<ProgressBar
+		android:id="@+id/connect_spinner"
+		style="?android:attr/progressBarStyleLarge"
+        android:layout_marginBottom="8dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/text_connecting"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_gravity="center"
+        android:text="@string/connecting" />
+
+	<EditText android:id="@+id/edit_ip"
+		android:inputType="text"
+		android:layout_weight="1"
+		android:layout_width="250dp"
+		android:layout_height="0dp"
+		android:hint="@string/edit_ip"
+		android:backgroundTint="@android:color/background_light"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"
+        android:visibility="invisible"/>
+
+	<Button android:id="@+id/button_connect"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:minWidth="100dp"
+		android:text="@string/button_connect"
+		android:onClick="onConnectPressed"
+        android:layout_gravity="center" />
+
+</LinearLayout>

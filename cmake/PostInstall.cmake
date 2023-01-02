@@ -1,0 +1,12 @@
+function(runAfter command target aguments )
+    add_custom_command(TARGET ${target} POST_BUILD COMMAND ${CMAKE_COMMAND} ${aguments} -P ${CMAKE_CURRENT_SOURCE_DIR}/../cmake/PostBuild-${command}.cmake)
+endfunction()
+
+function(find_and_copy_libs target libs installDir)
+    set(ARGUMENTS -DCMAKE_FIND_LIBRARY_PREFIXES="${CMAKE_FIND_LIBRARY_PREFIXES}")
+    set(ARGUMENTS ${ARGUMENTS} -DCMAKE_FIND_LIBRARY_SUFFIXES="${CMAKE_FIND_LIBRARY_SUFFIXES}")
+    set(ARGUMENTS ${ARGUMENTS} -DINSTALL_DIR=${installDir})
+    set(ARGUMENTS ${ARGUMENTS} -DCMAKE_PREFIX_PATH=${CMAKE_BINARY_DIR}/lib)
+    set(ARGUMENTS ${ARGUMENTS} -DLIBS="${libs}")
+    runAfter(find_and_copy_libs ${target} "${ARGUMENTS}")
+endfunction()

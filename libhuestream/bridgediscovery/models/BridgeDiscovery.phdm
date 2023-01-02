@@ -1,0 +1,55 @@
+package bridge_discovery
+
+interface BridgeDiscovery {
+
+    /**
+     * Bridge Discovery Option enum
+     * Use this enum to get the Bridge Discovery method options.
+     */
+    flag enum Option {
+        UPNP    ///< search for bridges via UPnP on the local network
+        IPSCAN  /*!< brute force scanning for bridges on the local network.
+                     Scans only the last subnet of the ip (IPV4 only).
+                     If multiple network interfaces are present it picks the first one in the list */
+        NUPNP   ///< search for bridges via the portal
+    }
+
+    enum ReturnCode {
+        SUCCESS                       =  0  ///< Search was successful
+        BUSY                          = -5  ///< A search is already in progress. It's not allowed to start multiple searches simultaneously
+        NULL_PARAMETER                = -101
+        STOPPED                       = -303  ///< Search has been stopped
+        MISSING_DISCOVERY_METHODS     = -401  ///< No discovery methods could be found
+    }
+
+    callback Callback {
+        func on_finished(results: [shared BridgeDiscoveryResult], return_code: ReturnCode)
+    }
+
+    constructor()
+
+    /**
+     * Search for Hue bridges with default search methods (UPNP and NUPNP)
+     * @param cb The callback interface, onFinished will be called when search is done.
+     */
+    func search(cb: Callback)
+
+    /**
+     * Search for Hue Bridges with specific search methods.
+     * @param option bridge discovery option
+     * @param cb The callback interface, onFinished will be called when search is done.
+     */
+    func search(option: Option, cb: Callback)
+
+    /**
+     * Get the state of the bridge search.
+     * @return Boolean value whether bridge search is active or not.
+     */
+    func is_searching() -> bool
+
+    /**
+     * Stop the bridge search. If a search was still in progress, that the callback will be called with the
+     * found results.
+     */
+    func stop()
+}

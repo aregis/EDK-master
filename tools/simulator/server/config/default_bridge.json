@@ -1,0 +1,12 @@
+{
+    "errors": [],
+    "data":
+	[
+        {
+            "bridge_id": "localhost",
+            "id": "1ebcd780-4eaa-40d9-948d-216734bce8a6",
+            "id_v1": "",
+            "type": "bridge"
+        }
+    ]
+}

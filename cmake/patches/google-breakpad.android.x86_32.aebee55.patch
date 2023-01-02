@@ -1,0 +1,659 @@
+From f369c6c24c96f07c7ef42c00a40ac39609026016 Mon Sep 17 00:00:00 2001
+From: ghazi bousselmi <ghazi.bousselmi@lighting.com>
+Date: Wed, 13 Jun 2018 13:03:52 +0200
+Subject: [PATCH 1/2] fix
+
+---
+ src/client/linux/handler/exception_handler.cc      | 53 +++++++------
+ .../linux/minidump_writer/linux_ptrace_dumper.cc   | 50 ++++++------
+ .../linux/minidump_writer/minidump_writer.cc       | 24 +++---
+ src/common/memory_allocator.h                      |  8 +-
+ src/third_party/lss/linux_syscall_support.h        | 92 ----------------------
+ 5 files changed, 66 insertions(+), 161 deletions(-)
+
+diff --git a/src/client/linux/handler/exception_handler.cc b/src/client/linux/handler/exception_handler.cc
+index cd94e3b..11e77e6 100644
+--- a/src/client/linux/handler/exception_handler.cc
++++ b/src/client/linux/handler/exception_handler.cc
+@@ -53,7 +53,7 @@
+ //                                          DoDump  (writes minidump)
+ //                                            |
+ //                                            V
+-//                                         sys_exit
++//                                          exit
+ //
+ 
+ // This code is a little fragmented. Different functions of the ExceptionHandler
+@@ -68,6 +68,7 @@
+ #include <errno.h>
+ #include <fcntl.h>
+ #include <linux/limits.h>
++#include <sched.h>
+ #include <pthread.h>
+ #include <sched.h>
+ #include <signal.h>
+@@ -142,12 +143,12 @@ void InstallAlternateStackLocked() {
+ 
+   // Only set an alternative stack if there isn't already one, or if the current
+   // one is too small.
+-  if (sys_sigaltstack(NULL, &old_stack) == -1 || !old_stack.ss_sp ||
++  if (sigaltstack(NULL, &old_stack) == -1 || !old_stack.ss_sp ||
+       old_stack.ss_size < kSigStackSize) {
+     new_stack.ss_sp = calloc(1, kSigStackSize);
+     new_stack.ss_size = kSigStackSize;
+ 
+-    if (sys_sigaltstack(&new_stack, NULL) == -1) {
++    if (sigaltstack(&new_stack, NULL) == -1) {
+       free(new_stack.ss_sp);
+       return;
+     }
+@@ -161,19 +162,19 @@ void RestoreAlternateStackLocked() {
+     return;
+ 
+   stack_t current_stack;
+-  if (sys_sigaltstack(NULL, &current_stack) == -1)
++  if (sigaltstack(NULL, &current_stack) == -1)
+     return;
+ 
+   // Only restore the old_stack if the current alternative stack is the one
+   // installed by the call to InstallAlternateStackLocked.
+   if (current_stack.ss_sp == new_stack.ss_sp) {
+     if (old_stack.ss_sp) {
+-      if (sys_sigaltstack(&old_stack, NULL) == -1)
++      if (sigaltstack(&old_stack, NULL) == -1)
+         return;
+     } else {
+       stack_t disable_stack;
+       disable_stack.ss_flags = SS_DISABLE;
+-      if (sys_sigaltstack(&disable_stack, NULL) == -1)
++      if (sigaltstack(&disable_stack, NULL) == -1)
+         return;
+     }
+   }
+@@ -191,10 +192,10 @@ void InstallDefaultHandler(int sig) {
+   // To work around this, directly call the system's sigaction.
+   struct kernel_sigaction sa;
+   memset(&sa, 0, sizeof(sa));
+-  sys_sigemptyset(&sa.sa_mask);
++  sigemptyset(&sa.sa_mask);
+   sa.sa_handler_ = SIG_DFL;
+   sa.sa_flags = SA_RESTART;
+-  sys_rt_sigaction(sig, &sa, NULL, sizeof(kernel_sigset_t));
++  rt_sigaction(sig, &sa, NULL, sizeof(kernel_sigset_t));
+ #else
+   signal(sig, SIG_DFL);
+ #endif
+@@ -423,12 +424,12 @@ int ExceptionHandler::ThreadEntry(void *arg) {
+ 
+   // Close the write end of the pipe. This allows us to fail if the parent dies
+   // while waiting for the continue signal.
+-  sys_close(thread_arg->handler->fdes[1]);
++  close(thread_arg->handler->fdes[1]);
+ 
+   // Block here until the crashing process unblocks us when
+   // we're allowed to use ptrace
+   thread_arg->handler->WaitForContinueSignal();
+-  sys_close(thread_arg->handler->fdes[0]);
++  close(thread_arg->handler->fdes[0]);
+ 
+   return thread_arg->handler->DoDump(thread_arg->pid, thread_arg->context,
+                                      thread_arg->context_size) == false;
+@@ -445,7 +446,7 @@ bool ExceptionHandler::HandleSignal(int /*sig*/, siginfo_t* info, void* uc) {
+   bool signal_pid_trusted = info->si_code == SI_USER ||
+       info->si_code == SI_TKILL;
+   if (signal_trusted || (signal_pid_trusted && info->si_pid == getpid())) {
+-    sys_prctl(PR_SET_DUMPABLE, 1, 0, 0, 0);
++    prctl(PR_SET_DUMPABLE, 1, 0, 0, 0);
+   }
+ 
+   // Fill in all the holes in the struct to make Valgrind happy.
+@@ -520,12 +521,12 @@ bool ExceptionHandler::GenerateDump(CrashContext *context) {
+   // kernels, but we need to know the PID of the cloned process before we
+   // can do this. Create a pipe here which we can use to block the
+   // cloned process after creating it, until we have explicitly enabled ptrace
+-  if (sys_pipe(fdes) == -1) {
++  if (pipe(fdes) == -1) {
+     // Creating the pipe failed. We'll log an error but carry on anyway,
+     // as we'll probably still get a useful crash report. All that will happen
+     // is the write() and read() calls will fail with EBADF
+     static const char no_pipe_msg[] = "ExceptionHandler::GenerateDump "
+-                                      "sys_pipe failed:";
++                                      "pipe failed:";
+     logger::write(no_pipe_msg, sizeof(no_pipe_msg) - 1);
+     logger::write(strerror(errno), strlen(strerror(errno)));
+     logger::write("\n", 1);
+@@ -534,24 +535,24 @@ bool ExceptionHandler::GenerateDump(CrashContext *context) {
+     fdes[0] = fdes[1] = -1;
+   }
+ 
+-  const pid_t child = sys_clone(
++  const pid_t child = clone(
+       ThreadEntry, stack, CLONE_FS | CLONE_UNTRACED, &thread_arg, NULL, NULL,
+       NULL);
+   if (child == -1) {
+-    sys_close(fdes[0]);
+-    sys_close(fdes[1]);
++    close(fdes[0]);
++    close(fdes[1]);
+     return false;
+   }
+ 
+   // Close the read end of the pipe.
+-  sys_close(fdes[0]);
++  close(fdes[0]);
+   // Allow the child to ptrace us
+-  sys_prctl(PR_SET_PTRACER, child, 0, 0, 0);
++  prctl(PR_SET_PTRACER, child, 0, 0, 0);
+   SendContinueSignalToChild();
+   int status;
+-  const int r = HANDLE_EINTR(sys_waitpid(child, &status, __WALL));
++  const int r = HANDLE_EINTR(waitpid(child, &status, __WALL));
+ 
+-  sys_close(fdes[1]);
++  close(fdes[1]);
+ 
+   if (r == -1) {
+     static const char msg[] = "ExceptionHandler::GenerateDump waitpid failed:";
+@@ -570,10 +571,10 @@ bool ExceptionHandler::GenerateDump(CrashContext *context) {
+ void ExceptionHandler::SendContinueSignalToChild() {
+   static const char okToContinueMessage = 'a';
+   int r;
+-  r = HANDLE_EINTR(sys_write(fdes[1], &okToContinueMessage, sizeof(char)));
++  r = HANDLE_EINTR(write(fdes[1], &okToContinueMessage, sizeof(char)));
+   if (r == -1) {
+     static const char msg[] = "ExceptionHandler::SendContinueSignalToChild "
+-                              "sys_write failed:";
++                              "write failed:";
+     logger::write(msg, sizeof(msg) - 1);
+     logger::write(strerror(errno), strlen(strerror(errno)));
+     logger::write("\n", 1);
+@@ -585,10 +586,10 @@ void ExceptionHandler::SendContinueSignalToChild() {
+ void ExceptionHandler::WaitForContinueSignal() {
+   int r;
+   char receivedMessage;
+-  r = HANDLE_EINTR(sys_read(fdes[0], &receivedMessage, sizeof(char)));
++  r = HANDLE_EINTR(read(fdes[0], &receivedMessage, sizeof(char)));
+   if (r == -1) {
+     static const char msg[] = "ExceptionHandler::WaitForContinueSignal "
+-                              "sys_read failed:";
++                              "read failed:";
+     logger::write(msg, sizeof(msg) - 1);
+     logger::write(strerror(errno), strlen(strerror(errno)));
+     logger::write("\n", 1);
+@@ -671,7 +672,7 @@ bool ExceptionHandler::WriteMinidump() {
+   }
+ 
+   // Allow this process to be dumped.
+-  sys_prctl(PR_SET_DUMPABLE, 1, 0, 0, 0);
++  prctl(PR_SET_DUMPABLE, 1, 0, 0, 0);
+ 
+   CrashContext context;
+   int getcontext_result = getcontext(&context.context);
+@@ -705,7 +706,7 @@ bool ExceptionHandler::WriteMinidump() {
+   memcpy(&context.float_state, context.context.uc_mcontext.fpregs,
+          sizeof(context.float_state));
+ #endif
+-  context.tid = sys_gettid();
++  context.tid = gettid();
+ 
+   // Add an exception stream to the minidump for better reporting.
+   memset(&context.siginfo, 0, sizeof(context.siginfo));
+diff --git a/src/client/linux/minidump_writer/linux_ptrace_dumper.cc b/src/client/linux/minidump_writer/linux_ptrace_dumper.cc
+index e3ddb81..1875ebd 100644
+--- a/src/client/linux/minidump_writer/linux_ptrace_dumper.cc
++++ b/src/client/linux/minidump_writer/linux_ptrace_dumper.cc
+@@ -63,13 +63,13 @@
+ static bool SuspendThread(pid_t pid) {
+   // This may fail if the thread has just died or debugged.
+   errno = 0;
+-  if (sys_ptrace(PTRACE_ATTACH, pid, NULL, NULL) != 0 &&
++  if (ptrace(PTRACE_ATTACH, pid, NULL, NULL) != 0 &&
+       errno != 0) {
+     return false;
+   }
+-  while (sys_waitpid(pid, NULL, __WALL) < 0) {
++  while (waitpid(pid, NULL, __WALL) < 0) {
+     if (errno != EINTR) {
+-      sys_ptrace(PTRACE_DETACH, pid, NULL, NULL);
++      ptrace(PTRACE_DETACH, pid, NULL, NULL);
+       return false;
+     }
+   }
+@@ -82,14 +82,14 @@ static bool SuspendThread(pid_t pid) {
+   // We thus test the stack pointer and exclude any threads that are part of
+   // the seccomp sandbox's trusted code.
+   user_regs_struct regs;
+-  if (sys_ptrace(PTRACE_GETREGS, pid, NULL, &regs) == -1 ||
++  if (ptrace(PTRACE_GETREGS, pid, NULL, &regs) == -1 ||
+ #if defined(__i386)
+       !regs.esp
+ #elif defined(__x86_64)
+       !regs.rsp
+ #endif
+       ) {
+-    sys_ptrace(PTRACE_DETACH, pid, NULL, NULL);
++    ptrace(PTRACE_DETACH, pid, NULL, NULL);
+     return false;
+   }
+ #endif
+@@ -98,7 +98,7 @@ static bool SuspendThread(pid_t pid) {
+ 
+ // Resumes a thread by detaching from it.
+ static bool ResumeThread(pid_t pid) {
+-  return sys_ptrace(PTRACE_DETACH, pid, NULL, NULL) >= 0;
++  return ptrace(PTRACE_DETACH, pid, NULL, NULL) >= 0;
+ }
+ 
+ namespace google_breakpad {
+@@ -140,7 +140,7 @@ bool LinuxPtraceDumper::CopyFromProcess(void* dest, pid_t child,
+ 
+   while (done < length) {
+     const size_t l = (length - done > word_size) ? word_size : (length - done);
+-    if (sys_ptrace(PTRACE_PEEKDATA, child, remote + done, &tmp) == -1) {
++    if (ptrace(PTRACE_PEEKDATA, child, remote + done, &tmp) == -1) {
+       tmp = 0;
+     }
+     my_memcpy(local + done, &tmp, l);
+@@ -154,12 +154,12 @@ bool LinuxPtraceDumper::ReadRegisterSet(ThreadInfo* info, pid_t tid)
+ #ifdef PTRACE_GETREGSET
+   struct iovec io;
+   info->GetGeneralPurposeRegisters(&io.iov_base, &io.iov_len);
+-  if (sys_ptrace(PTRACE_GETREGSET, tid, (void*)NT_PRSTATUS, (void*)&io) == -1) {
++  if (ptrace(PTRACE_GETREGSET, tid, (void*)NT_PRSTATUS, (void*)&io) == -1) {
+     return false;
+   }
+ 
+   info->GetFloatingPointRegisters(&io.iov_base, &io.iov_len);
+-  if (sys_ptrace(PTRACE_GETREGSET, tid, (void*)NT_FPREGSET, (void*)&io) == -1) {
++  if (ptrace(PTRACE_GETREGSET, tid, (void*)NT_FPREGSET, (void*)&io) == -1) {
+     return false;
+   }
+   return true;
+@@ -172,7 +172,7 @@ bool LinuxPtraceDumper::ReadRegisters(ThreadInfo* info, pid_t tid) {
+ #ifdef PTRACE_GETREGS
+   void* gp_addr;
+   info->GetGeneralPurposeRegisters(&gp_addr, NULL);
+-  if (sys_ptrace(PTRACE_GETREGS, tid, NULL, gp_addr) == -1) {
++  if (ptrace(PTRACE_GETREGS, tid, NULL, gp_addr) == -1) {
+     return false;
+   }
+ 
+@@ -183,7 +183,7 @@ bool LinuxPtraceDumper::ReadRegisters(ThreadInfo* info, pid_t tid) {
+   // See http://crbug.com/508324
+   void* fp_addr;
+   info->GetFloatingPointRegisters(&fp_addr, NULL);
+-  if (sys_ptrace(PTRACE_GETFPREGS, tid, NULL, fp_addr) == -1) {
++  if (ptrace(PTRACE_GETFPREGS, tid, NULL, fp_addr) == -1) {
+     return false;
+   }
+ #endif  // !(defined(__ANDROID__) && defined(__ARM_EABI__))
+@@ -208,7 +208,7 @@ bool LinuxPtraceDumper::GetThreadInfoByIndex(size_t index, ThreadInfo* info) {
+   if (!BuildProcPath(status_path, tid, "status"))
+     return false;
+ 
+-  const int fd = sys_open(status_path, O_RDONLY, 0);
++  const int fd = open(status_path, O_RDONLY, 0);
+   if (fd < 0)
+     return false;
+ 
+@@ -227,7 +227,7 @@ bool LinuxPtraceDumper::GetThreadInfoByIndex(size_t index, ThreadInfo* info) {
+ 
+     line_reader->PopLine(line_len);
+   }
+-  sys_close(fd);
++  close(fd);
+ 
+   if (info->ppid == -1 || info->tgid == -1)
+     return false;
+@@ -246,7 +246,7 @@ bool LinuxPtraceDumper::GetThreadInfoByIndex(size_t index, ThreadInfo* info) {
+   int eax, ebx, ecx, edx;
+   __cpuid(1, eax, ebx, ecx, edx);
+   if (edx & bit_FXSAVE) {
+-    if (sys_ptrace(PTRACE_GETFPXREGS, tid, NULL, &info->fpxregs) == -1) {
++    if (ptrace(PTRACE_GETFPXREGS, tid, NULL, &info->fpxregs) == -1) {
+       return false;
+     }
+   } else {
+@@ -256,7 +256,7 @@ bool LinuxPtraceDumper::GetThreadInfoByIndex(size_t index, ThreadInfo* info) {
+ 
+ #if defined(__i386) || defined(__x86_64)
+   for (unsigned i = 0; i < ThreadInfo::kNumDebugRegisters; ++i) {
+-    if (sys_ptrace(
++    if (ptrace(
+         PTRACE_PEEKUSER, tid,
+         reinterpret_cast<void*> (offsetof(struct user,
+                                           u_debugreg[0]) + i *
+@@ -268,21 +268,21 @@ bool LinuxPtraceDumper::GetThreadInfoByIndex(size_t index, ThreadInfo* info) {
+ #endif
+ 
+ #if defined(__mips__)
+-  sys_ptrace(PTRACE_PEEKUSER, tid,
++  ptrace(PTRACE_PEEKUSER, tid,
+              reinterpret_cast<void*>(PC), &info->mcontext.pc);
+-  sys_ptrace(PTRACE_PEEKUSER, tid,
++  ptrace(PTRACE_PEEKUSER, tid,
+              reinterpret_cast<void*>(DSP_BASE), &info->mcontext.hi1);
+-  sys_ptrace(PTRACE_PEEKUSER, tid,
++  ptrace(PTRACE_PEEKUSER, tid,
+              reinterpret_cast<void*>(DSP_BASE + 1), &info->mcontext.lo1);
+-  sys_ptrace(PTRACE_PEEKUSER, tid,
++  ptrace(PTRACE_PEEKUSER, tid,
+              reinterpret_cast<void*>(DSP_BASE + 2), &info->mcontext.hi2);
+-  sys_ptrace(PTRACE_PEEKUSER, tid,
++  ptrace(PTRACE_PEEKUSER, tid,
+              reinterpret_cast<void*>(DSP_BASE + 3), &info->mcontext.lo2);
+-  sys_ptrace(PTRACE_PEEKUSER, tid,
++  ptrace(PTRACE_PEEKUSER, tid,
+              reinterpret_cast<void*>(DSP_BASE + 4), &info->mcontext.hi3);
+-  sys_ptrace(PTRACE_PEEKUSER, tid,
++  ptrace(PTRACE_PEEKUSER, tid,
+              reinterpret_cast<void*>(DSP_BASE + 5), &info->mcontext.lo3);
+-  sys_ptrace(PTRACE_PEEKUSER, tid,
++  ptrace(PTRACE_PEEKUSER, tid,
+              reinterpret_cast<void*>(DSP_CONTROL), &info->mcontext.dsp);
+ #endif
+ 
+@@ -347,7 +347,7 @@ bool LinuxPtraceDumper::EnumerateThreads() {
+   if (!BuildProcPath(task_path, pid_, "task"))
+     return false;
+ 
+-  const int fd = sys_open(task_path, O_RDONLY | O_DIRECTORY, 0);
++  const int fd = open(task_path, O_RDONLY | O_DIRECTORY, 0);
+   if (fd < 0)
+     return false;
+   DirectoryReader* dir_reader = new(allocator_) DirectoryReader(fd);
+@@ -369,7 +369,7 @@ bool LinuxPtraceDumper::EnumerateThreads() {
+     dir_reader->PopEntry();
+   }
+ 
+-  sys_close(fd);
++  close(fd);
+   return true;
+ }
+ 
+diff --git a/src/client/linux/minidump_writer/minidump_writer.cc b/src/client/linux/minidump_writer/minidump_writer.cc
+index c716143..9e49bb9 100644
+--- a/src/client/linux/minidump_writer/minidump_writer.cc
++++ b/src/client/linux/minidump_writer/minidump_writer.cc
+@@ -922,7 +922,7 @@ class MinidumpWriter {
+         MD_CPU_ARCHITECTURE_AMD64;
+ #endif
+ 
+-    const int fd = sys_open("/proc/cpuinfo", O_RDONLY, 0);
++    const int fd = open("/proc/cpuinfo", O_RDONLY, 0);
+     if (fd < 0)
+       return false;
+ 
+@@ -961,7 +961,7 @@ class MinidumpWriter {
+             my_strlcpy(vendor_id, value, sizeof(vendor_id));
+         }
+       }
+-      sys_close(fd);
++      close(fd);
+     }
+ 
+     // make sure we got everything we wanted
+@@ -1065,15 +1065,15 @@ class MinidumpWriter {
+       CpuSet cpus_present;
+       CpuSet cpus_possible;
+ 
+-      int fd = sys_open("/sys/devices/system/cpu/present", O_RDONLY, 0);
++      int fd = open("/sys/devices/system/cpu/present", O_RDONLY, 0);
+       if (fd >= 0) {
+         cpus_present.ParseSysFile(fd);
+-        sys_close(fd);
++        close(fd);
+ 
+-        fd = sys_open("/sys/devices/system/cpu/possible", O_RDONLY, 0);
++        fd = open("/sys/devices/system/cpu/possible", O_RDONLY, 0);
+         if (fd >= 0) {
+           cpus_possible.ParseSysFile(fd);
+-          sys_close(fd);
++          close(fd);
+ 
+           cpus_present.IntersectWith(cpus_possible);
+           int cpu_count = cpus_present.GetCount();
+@@ -1089,7 +1089,7 @@ class MinidumpWriter {
+     // read /proc/self/auxv but unfortunately, this file is not always
+     // readable from regular Android applications on later versions
+     // (>= 4.1) of the Android platform.
+-    const int fd = sys_open("/proc/cpuinfo", O_RDONLY, 0);
++    const int fd = open("/proc/cpuinfo", O_RDONLY, 0);
+     if (fd < 0) {
+       // Do not return false here to allow the minidump generation
+       // to happen properly.
+@@ -1191,7 +1191,7 @@ class MinidumpWriter {
+           }
+         }
+       }
+-      sys_close(fd);
++      close(fd);
+     }
+ 
+     return true;
+@@ -1201,7 +1201,7 @@ class MinidumpWriter {
+ #endif
+ 
+   bool WriteFile(MDLocationDescriptor* result, const char* filename) {
+-    const int fd = sys_open(filename, O_RDONLY, 0);
++    const int fd = open(filename, O_RDONLY, 0);
+     if (fd < 0)
+       return false;
+ 
+@@ -1221,7 +1221,7 @@ class MinidumpWriter {
+     for (Buffers* bufptr = buffers;;) {
+       ssize_t r;
+       do {
+-        r = sys_read(fd, &bufptr->data[bufptr->len], kBufSize - bufptr->len);
++        r = read(fd, &bufptr->data[bufptr->len], kBufSize - bufptr->len);
+       } while (r == -1 && errno == EINTR);
+ 
+       if (r < 1)
+@@ -1236,7 +1236,7 @@ class MinidumpWriter {
+         bufptr->len = 0;
+       }
+     }
+-    sys_close(fd);
++    close(fd);
+ 
+     if (!total)
+       return false;
+@@ -1247,7 +1247,7 @@ class MinidumpWriter {
+     for (MDRVA pos = memory.position(); buffers; buffers = buffers->next) {
+       // Check for special case of a zero-length buffer.  This should only
+       // occur if a file's size happens to be a multiple of the buffer's
+-      // size, in which case the final sys_read() will have resulted in
++      // size, in which case the final read() will have resulted in
+       // zero bytes being read after the final buffer was just allocated.
+       if (buffers->len == 0) {
+         // This can only occur with final buffer.
+diff --git a/src/common/memory_allocator.h b/src/common/memory_allocator.h
+index a3159ea..54b6ff7 100644
+--- a/src/common/memory_allocator.h
++++ b/src/common/memory_allocator.h
+@@ -43,11 +43,7 @@
+ #endif
+ 
+ #ifdef __APPLE__
+-#define sys_mmap mmap
+-#define sys_munmap munmap
+ #define MAP_ANONYMOUS MAP_ANON
+-#else
+-#include "third_party/lss/linux_syscall_support.h"
+ #endif
+ 
+ namespace google_breakpad {
+@@ -116,7 +112,7 @@ class PageAllocator {
+ 
+  private:
+   uint8_t *GetNPages(size_t num_pages) {
+-    void *a = sys_mmap(NULL, page_size_ * num_pages, PROT_READ | PROT_WRITE,
++    void *a = mmap(NULL, page_size_ * num_pages, PROT_READ | PROT_WRITE,
+                        MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
+     if (a == MAP_FAILED)
+       return NULL;
+@@ -142,7 +138,7 @@ class PageAllocator {
+ 
+     for (PageHeader *cur = last_; cur; cur = next) {
+       next = cur->next;
+-      sys_munmap(cur, cur->num_pages * page_size_);
++      munmap(cur, cur->num_pages * page_size_);
+     }
+   }
+ 
+diff --git a/src/third_party/lss/linux_syscall_support.h b/src/third_party/lss/linux_syscall_support.h
+index 5d9c2e8..c54f3a9 100644
+--- a/src/third_party/lss/linux_syscall_support.h
++++ b/src/third_party/lss/linux_syscall_support.h
+@@ -2037,92 +2037,6 @@ struct kernel_statfs {
+                              : "esp", "memory");                              \
+         LSS_RETURN(type,__res);                                               \
+       }
+-    LSS_INLINE int LSS_NAME(clone)(int (*fn)(void *), void *child_stack,
+-                                   int flags, void *arg, int *parent_tidptr,
+-                                   void *newtls, int *child_tidptr) {
+-      long __res;
+-      __asm__ __volatile__(/* if (fn == NULL)
+-                            *   return -EINVAL;
+-                            */
+-                           "movl   %3,%%ecx\n"
+-                           "jecxz  1f\n"
+-
+-                           /* if (child_stack == NULL)
+-                            *   return -EINVAL;
+-                            */
+-                           "movl   %4,%%ecx\n"
+-                           "jecxz  1f\n"
+-
+-                           /* Set up alignment of the child stack:
+-                            * child_stack = (child_stack & ~0xF) - 20;
+-                            */
+-                           "andl   $-16,%%ecx\n"
+-                           "subl   $20,%%ecx\n"
+-
+-                           /* Push "arg" and "fn" onto the stack that will be
+-                            * used by the child.
+-                            */
+-                           "movl   %6,%%eax\n"
+-                           "movl   %%eax,4(%%ecx)\n"
+-                           "movl   %3,%%eax\n"
+-                           "movl   %%eax,(%%ecx)\n"
+-
+-                           /* %eax = syscall(%eax = __NR_clone,
+-                            *                %ebx = flags,
+-                            *                %ecx = child_stack,
+-                            *                %edx = parent_tidptr,
+-                            *                %esi = newtls,
+-                            *                %edi = child_tidptr)
+-                            * Also, make sure that %ebx gets preserved as it is
+-                            * used in PIC mode.
+-                            */
+-                           "movl   %8,%%esi\n"
+-                           "movl   %7,%%edx\n"
+-                           "movl   %5,%%eax\n"
+-                           "movl   %9,%%edi\n"
+-                           "pushl  %%ebx\n"
+-                           "movl   %%eax,%%ebx\n"
+-                           "movl   %2,%%eax\n"
+-                           LSS_ENTRYPOINT
+-
+-                           /* In the parent: restore %ebx
+-                            * In the child:  move "fn" into %ebx
+-                            */
+-                           "popl   %%ebx\n"
+-
+-                           /* if (%eax != 0)
+-                            *   return %eax;
+-                            */
+-                           "test   %%eax,%%eax\n"
+-                           "jnz    1f\n"
+-
+-                           /* In the child, now. Terminate frame pointer chain.
+-                            */
+-                           "movl   $0,%%ebp\n"
+-
+-                           /* Call "fn". "arg" is already on the stack.
+-                            */
+-                           "call   *%%ebx\n"
+-
+-                           /* Call _exit(%ebx). Unfortunately older versions
+-                            * of gcc restrict the number of arguments that can
+-                            * be passed to asm(). So, we need to hard-code the
+-                            * system call number.
+-                            */
+-                           "movl   %%eax,%%ebx\n"
+-                           "movl   $1,%%eax\n"
+-                           LSS_ENTRYPOINT
+-
+-                           /* Return to parent.
+-                            */
+-                         "1:\n"
+-                           : "=a" (__res)
+-                           : "0"(-EINVAL), "i"(__NR_clone),
+-                             "m"(fn), "m"(child_stack), "m"(flags), "m"(arg),
+-                             "m"(parent_tidptr), "m"(newtls), "m"(child_tidptr)
+-                           : "esp", "memory", "ecx", "edx", "esi", "edi");
+-      LSS_RETURN(int, __res);
+-    }
+ 
+     LSS_INLINE _syscall1(int, set_thread_area, void *, u)
+     LSS_INLINE _syscall1(int, get_thread_area, void *, u)
+@@ -4491,12 +4405,6 @@ struct kernel_statfs {
+   }
+ #endif
+ 
+-#if !defined(__NR_waitpid)
+-  LSS_INLINE pid_t LSS_NAME(waitpid)(pid_t pid, int *status, int options) {
+-    return LSS_NAME(wait4)(pid, status, options, 0);
+-  }
+-#endif
+-
+ #if !defined(__NR_fork)
+ // TODO: define this in an arch-independant way instead of inlining the clone
+ //       syscall body.
+-- 
+2.15.1 (Apple Git-101)
+
+
+From 11db8cc2b7c902cb43520ffc128e1988643670b9 Mon Sep 17 00:00:00 2001
+From: ghazi bousselmi <ghazi.bousselmi@lighting.com>
+Date: Wed, 13 Jun 2018 14:05:44 +0200
+Subject: [PATCH 2/2] build fix
+
+---
+ src/client/linux/handler/exception_handler.cc | 9 ++++++---
+ 1 file changed, 6 insertions(+), 3 deletions(-)
+
+diff --git a/src/client/linux/handler/exception_handler.cc b/src/client/linux/handler/exception_handler.cc
+index 11e77e6..7f89798 100644
+--- a/src/client/linux/handler/exception_handler.cc
++++ b/src/client/linux/handler/exception_handler.cc
+@@ -78,6 +78,9 @@
+ #include <sys/syscall.h>
+ #include <sys/wait.h>
+ #include <unistd.h>
++#if defined(__ANDROID__)
++#   include <signal.h>
++#endif
+ 
+ #include <sys/signal.h>
+ #include <sys/ucontext.h>
+@@ -190,12 +193,12 @@ void InstallDefaultHandler(int sig) {
+   // to SIG_DFL is ignored. In that case, an infinite loop is entered as the
+   // signal is repeatedly sent to breakpad's signal handler.
+   // To work around this, directly call the system's sigaction.
+-  struct kernel_sigaction sa;
++  struct sigaction sa;
+   memset(&sa, 0, sizeof(sa));
+   sigemptyset(&sa.sa_mask);
+-  sa.sa_handler_ = SIG_DFL;
++  sa.sa_handler = SIG_DFL;
+   sa.sa_flags = SA_RESTART;
+-  rt_sigaction(sig, &sa, NULL, sizeof(kernel_sigset_t));
++  sigaction(sig, &sa, NULL);
+ #else
+   signal(sig, SIG_DFL);
+ #endif
+-- 
+2.15.1 (Apple Git-101)
+

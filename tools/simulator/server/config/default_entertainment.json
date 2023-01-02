@@ -1,0 +1,442 @@
+{
+    "errors": [],
+    "data": [        
+        {
+            "id": "4cdbfb76-62a5-40aa-b559-e4323dbdd8b7",
+            "id_v1": "/lights/1",
+            "proxy": true,
+            "renderer": true,
+            "segments": {
+                "configurable": false,
+                "max_segments": 1,
+                "segments": [
+                    {
+                        "length": 1,
+                        "start": 0
+                    }
+                ]
+            },
+            "type": "entertainment"
+        },
+        {
+            "id": "ec1e76bf-6b95-4466-b7c3-2a1e88045f44",
+            "id_v1": "/lights/2",
+            "proxy": true,
+            "renderer": true,
+            "segments": {
+                "configurable": false,
+                "max_segments": 1,
+                "segments": [
+                    {
+                        "length": 1,
+                        "start": 0
+                    }
+                ]
+            },
+            "type": "entertainment"
+        },
+        {
+            "id": "7bcaad68-c75e-403f-a184-f1c40dfce12d",
+            "id_v1": "/lights/3",
+            "proxy": true,
+            "renderer": true,
+            "segments": {
+                "configurable": false,
+                "max_segments": 1,
+                "segments": [
+                    {
+                        "length": 1,
+                        "start": 0
+                    }
+                ]
+            },
+            "type": "entertainment"
+        },
+        {
+            "id": "3503b48d-5d0f-4fa3-a21b-3bffa19a1bdd",
+            "id_v1": "/lights/4",
+            "proxy": true,
+            "renderer": true,
+            "segments": {
+                "configurable": false,
+                "max_segments": 1,
+                "segments": [
+                    {
+                        "length": 1,
+                        "start": 0
+                    }
+                ]
+            },
+            "type": "entertainment"
+        },
+        {
+            "id": "f99d1a33-4c7f-4983-adb2-78ba2338fddc",
+            "id_v1": "/lights/5",
+            "proxy": true,
+            "renderer": true,
+            "segments": {
+                "configurable": false,
+                "max_segments": 1,
+                "segments": [
+                    {
+                        "length": 1,
+                        "start": 0
+                    }
+                ]
+            },
+            "type": "entertainment"
+        },
+        {
+            "id": "b3854f92-385d-4670-a54b-2bf543fc0f73",
+            "id_v1": "/lights/6",
+            "proxy": true,
+            "renderer": true,
+            "segments": {
+                "configurable": false,
+                "max_segments": 1,
+                "segments": [
+                    {
+                        "length": 1,
+                        "start": 0
+                    }
+                ]
+            },
+            "type": "entertainment"
+        },
+        {
+            "id": "0b341766-f553-4fb2-acc1-b763d3a90437",
+            "id_v1": "/lights/7",
+            "proxy": true,
+            "renderer": true,
+            "segments": {
+                "configurable": false,
+                "max_segments": 1,
+                "segments": [
+                    {
+                        "length": 1,
+                        "start": 0
+                    }
+                ]
+            },
+            "type": "entertainment"
+        },
+        {
+            "id": "3f8b1feb-af4f-4f48-9399-35e7aebb56d0",
+            "id_v1": "/lights/8",
+            "proxy": true,
+            "renderer": true,
+            "segments": {
+                "configurable": false,
+                "max_segments": 1,
+                "segments": [
+                    {
+                        "length": 1,
+                        "start": 0
+                    }
+                ]
+            },
+            "type": "entertainment"
+        },
+        {
+            "id": "2316d8dd-ab6a-4790-9ca9-2f0950d799a5",
+            "id_v1": "/lights/9",
+            "proxy": true,
+            "renderer": true,
+            "segments": {
+                "configurable": false,
+                "max_segments": 1,
+                "segments": [
+                    {
+                        "length": 1,
+                        "start": 0
+                    }
+                ]
+            },
+            "type": "entertainment"
+        },
+        {
+            "id": "a350e06e-5f37-411f-a602-efa777398fb4",
+            "id_v1": "/lights/10",
+            "proxy": true,
+            "renderer": true,
+            "segments": {
+                "configurable": false,
+                "max_segments": 1,
+                "segments": [
+                    {
+                        "length": 1,
+                        "start": 0
+                    }
+                ]
+            },
+            "type": "entertainment"
+        },
+        {
+            "id": "a7bc1189-82ca-4ebc-ac4c-f93f56755d59",
+            "id_v1": "/lights/11",
+            "proxy": true,
+            "renderer": true,
+            "segments": {
+                "configurable": false,
+                "max_segments": 1,
+                "segments": [
+                    {
+                        "length": 1,
+                        "start": 0
+                    }
+                ]
+            },
+            "type": "entertainment"
+        },
+        {
+            "id": "36cfa41b-db9b-46d8-ba70-386baae9bb10",
+            "id_v1": "/lights/12",
+            "proxy": true,
+            "renderer": true,
+            "segments": {
+                "configurable": false,
+                "max_segments": 1,
+                "segments": [
+                    {
+                        "length": 1,
+                        "start": 0
+                    }
+                ]
+            },
+            "type": "entertainment"
+        },
+        {
+            "id": "61e0c130-2145-4851-917c-0c262ca80f5d",
+            "id_v1": "/lights/13",
+            "proxy": true,
+            "renderer": true,
+            "segments": {
+                "configurable": false,
+                "max_segments": 1,
+                "segments": [
+                    {
+                        "length": 1,
+                        "start": 0
+                    }
+                ]
+            },
+            "type": "entertainment"
+        },
+        {
+            "id": "222eec40-deb8-4055-b247-055b1d8c05eb",
+            "id_v1": "/lights/14",
+            "proxy": true,
+            "renderer": true,
+            "segments": {
+                "configurable": false,
+                "max_segments": 1,
+                "segments": [
+                    {
+                        "length": 1,
+                        "start": 0
+                    }
+                ]
+            },
+            "type": "entertainment"
+        },
+        {
+            "id": "f9500c5c-19a5-4fe5-8003-8e22963a09e0",
+            "id_v1": "/lights/15",
+            "proxy": true,
+            "renderer": true,
+            "segments": {
+                "configurable": false,
+                "max_segments": 1,
+                "segments": [
+                    {
+                        "length": 1,
+                        "start": 0
+                    }
+                ]
+            },
+            "type": "entertainment"
+        },
+        {
+            "id": "4dcb46ac-7536-4dce-8bf0-a1ae1b76e751",
+            "id_v1": "/lights/16",
+            "proxy": true,
+            "renderer": true,
+            "segments": {
+                "configurable": false,
+                "max_segments": 1,
+                "segments": [
+                    {
+                        "length": 1,
+                        "start": 0
+                    }
+                ]
+            },
+            "type": "entertainment"
+        },
+        {
+            "id": "6b1246a1-d5d4-4106-ae93-4a93af158212",
+            "id_v1": "/lights/17",
+            "proxy": true,
+            "renderer": true,
+            "segments": {
+                "configurable": false,
+                "max_segments": 1,
+                "segments": [
+                    {
+                        "length": 1,
+                        "start": 0
+                    }
+                ]
+            },
+            "type": "entertainment"
+        },
+        {
+            "id": "37cc4a43-d3eb-4d3a-ad4a-7aa639400799",
+            "id_v1": "/lights/18",
+            "proxy": true,
+            "renderer": true,
+            "segments": {
+                "configurable": false,
+                "max_segments": 1,
+                "segments": [
+                    {
+                        "length": 1,
+                        "start": 0
+                    }
+                ]
+            },
+            "type": "entertainment"
+        },
+        {
+            "id": "6d3c4d1e-599a-47ec-985b-3d6d10221409",
+            "id_v1": "/lights/19",
+            "proxy": true,
+            "renderer": true,
+            "segments": {
+                "configurable": false,
+                "max_segments": 1,
+                "segments": [
+                    {
+                        "length": 1,
+                        "start": 0
+                    }
+                ]
+            },
+            "type": "entertainment"
+        },
+        {
+            "id": "9077ca4d-a413-47cd-a1e4-492ed73823fb",
+            "id_v1": "/lights/20",
+            "proxy": true,
+            "renderer": true,
+            "segments": {
+                "configurable": false,
+                "max_segments": 1,
+                "segments": [
+                    {
+                        "length": 1,
+                        "start": 0
+                    }
+                ]
+            },
+            "type": "entertainment"
+        },
+        {
+            "id": "4d33e591-d557-47b6-aaf5-2469ddc45c6f",
+            "id_v1": "/lights/21",
+            "proxy": true,
+            "renderer": true,
+            "segments": {
+                "configurable": false,
+                "max_segments": 1,
+                "segments": [
+                    {
+                        "length": 1,
+                        "start": 0
+                    }
+                ]
+            },
+            "type": "entertainment"
+        },
+        {
+            "id": "7fa069ba-1336-4ded-baec-08ae84851df8",
+            "id_v1": "/lights/22",
+            "proxy": true,
+            "renderer": true,
+            "segments": {
+                "configurable": false,
+                "max_segments": 1,
+                "segments": [
+                    {
+                        "length": 1,
+                        "start": 0
+                    }
+                ]
+            },
+            "type": "entertainment"
+        },
+        {
+            "id": "1f60107c-d64c-4064-a9ee-4e75ccb79987",
+            "id_v1": "/lights/23",
+            "proxy": true,
+            "renderer": true,
+            "segments": {
+                "configurable": false,
+                "max_segments": 1,
+                "segments": [
+                    {
+                        "length": 1,
+                        "start": 0
+                    }
+                ]
+            },
+            "type": "entertainment"
+        },
+        {
+            "id": "49c182dc-d2c2-4bf1-ae30-de75e380e494",
+            "id_v1": "/lights/24",
+            "proxy": true,
+            "renderer": true,
+            "segments": {
+                "configurable": false,
+                "max_segments": 1,
+                "segments": [
+                    {
+                        "length": 1,
+                        "start": 0
+                    }
+                ]
+            },
+            "type": "entertainment"
+        },
+        {
+            "id": "eb56fdd5-18a4-4e84-9692-23964f086654",
+            "id_v1": "/lights/25",
+            "proxy": true,
+            "renderer": true,
+            "segments": {
+                "configurable": false,
+                "max_segments": 1,
+                "segments": [
+                    {
+                        "length": 1,
+                        "start": 0
+                    }
+                ]
+            },
+            "type": "entertainment"
+        },
+        {
+            "id": "415ed4d1-cf04-497f-a45b-c65ad0059626",
+            "id_v1": "",
+            "proxy": true,
+            "renderer": false,
+            "segments": {
+                "configurable": false,
+                "max_segments": 0,
+                "segments": []
+            },
+            "type": "entertainment"
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">HueExample</string>
+    <string name="connecting">Connecting …</string>
+    <string name="txt_pushlink">Pushlink</string>
+    <string name="press_pushlink_button">Press the push-link button on the Hue Bridge</string>
+    <string name="txt_welcome">Welcome to HueExample</string>
+    <string name="select_group">Select area</string>
+    <string name="reset_bridge">Reset Hue data</string>
+    <string name="no_group">- No entertainment area available -</string>
+    <string name="edit_ip">IP address (optional)</string>
+    <string name="button_connect">Connect</string>
+    <string name="button_connect_new">Connect new bridge</string>
+    <string name="btn_abort">Abort</string>
+    <string name="hue_setup_title">Hue Setup</string>
+    <string name="lighting_enabled">Enable Hue lighting</string>
+    <string name="button_hue_setup">Hue Setup</string>
+    <string name="button_back">Back to main screen</string>
+    <string name="hue_setup_general">This section is used to configure the Philips Hue integration. Make sure your Philips Hue bridge is on the same network as this device and press Connect.</string>
+    <string name="hue_setup_owner">Looks like you have a Philips Hue system. Press connect if you want to link it to this app.</string>
+    <string name="hue_setup_connected">Connected to\u0020</string>
+    <string name="hue_setup_syncing">Syncing with\u0020</string>
+    <string name="btn_set_light_to_green">Set lights to green</string>
+    <string name="btn_play_various_effects">Play various effects</string>
+</resources>

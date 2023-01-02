@@ -1,0 +1,36 @@
+package bridge_discovery
+
+interface BridgeDiscoveryResult {
+    constructor()
+
+    /**
+     Constructor
+     @param unique_id The unique id of the bridge
+                e.g. 0017880FFFE9B00A
+     @param ip  The ip address of the bridge
+                e.g. 192.168.1.1 (only IPV4 supported for now)
+     @param api_version  The api version of the bridge (e.g. 1.15.0)
+     @param model_id The model ID of the bridge (BSB001 or BSB002)
+     */
+    constructor(unique_id: string, ip: string, api_version: string, model_id: string)
+
+    /**
+     the unique id of the bridge
+     */
+    mutable property unique_id: string
+
+    /**
+     ip address of the bridge
+     */
+    mutable property ip: string
+
+    /**
+     api version of the bridge
+     */
+    mutable property api_version: string
+
+    /**
+     the model ID of the bridge
+     */
+    mutable property model_id: string
+}

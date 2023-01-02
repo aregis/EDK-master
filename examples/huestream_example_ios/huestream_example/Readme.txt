@@ -1,0 +1,1 @@
+Copy huestream.xcframework from bin here.

@@ -1,0 +1,21 @@
+string(REPLACE " " ";" LIBS "${LIBS}")
+string(REPLACE " " ";" CMAKE_FIND_LIBRARY_SUFFIXES "${CMAKE_FIND_LIBRARY_SUFFIXES}")
+string(REPLACE " " ";" CMAKE_FIND_LIBRARY_PREFIXES "${CMAKE_FIND_LIBRARY_PREFIXES}")
+
+function(find_and_copy_libs LIBS)
+    foreach (LIB ${LIBS})
+        find_library(FOUND-${LIB} ${LIB})
+        if (NOT FOUND-${LIB})
+            message(FATAL_ERROR "${LIB} library not found :-(")
+        else ()
+            set(EXT_LIBS_PATHS ${EXT_LIBS_PATHS} ${FOUND-${LIB}})
+
+            get_filename_component(NAME ${FOUND-${LIB}} NAME)
+            set(INPUT_FILE ${FOUND-${LIB}})
+            set(OUTPUT_FOLDER ${INSTALL_DIR})
+            file(COPY ${INPUT_FILE} DESTINATION ${OUTPUT_FOLDER})
+        endif ()
+    endforeach ()
+endfunction()
+
+find_and_copy_libs("${LIBS}")

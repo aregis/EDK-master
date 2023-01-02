@@ -1,0 +1,14 @@
+models:
+- BridgeDiscovery.phdm
+- BridgeDiscoveryResult.phdm
+path: .
+
+packages:
+  bridge_discovery:
+    cpp_namespace: huesdk
+    cpp_path: .
+    java_package: com.philips.lighting.hue.sdk.wrapper.discovery
+    java_output_path: com/philips/lighting/hue/sdk/wrapper/discovery
+    cpp_interface_path: bridgediscovery
+    objc_prefix: PHS
+    objc_output_path: BridgeDiscovery

@@ -1,0 +1,1 @@
+add_subdirectory(huestream_performance_test)

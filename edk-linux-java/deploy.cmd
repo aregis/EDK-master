@@ -1,0 +1,1 @@
+mvn deploy:deploy-file -B -Durl=https://artifactory-ehv.rndit.intra.lighting.com/artifactory/hue_system/ -DrepositoryId=snapshots -DgeneratePom=false -Dversion="1.32-7bd2a98" -DgroupId=com.signify.hue.edk.libs -DartifactId=edk-linux-java -Dfile=../build/bin/huestream_java_native.dll -Dtype=dll -Dclassifier=native_library

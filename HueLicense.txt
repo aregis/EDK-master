@@ -1,0 +1,118 @@
+https://developers.meethue.com/content/EDK-terms-use 
+ 
+These terms of use (“Terms of Use”) are provided to you by Signify Netherlands B.V ("Signify"). Please note that your use of the Hue EDK, Hue developer account, and Hue EDK Materials is subject to these Terms of Use, which remain in full force and effect so long as you continue to use or access the Hue EDK, Hue developer account, Hue EDK Materials, and any product, app or service created therewith, or until terminated earlier in accordance with the provisions of these Terms of Use. By clicking to accept these Term of Use, you acknowledge that you have read all of its terms, and that you understand and agree to be bound by these terms. You accept and agree to the Terms Use on your own behalf and/or on behalf of your company or organization as its authorized legal representative.
+
+Definitions
+
+“Applicable Data Protection Laws” means the provisions of mandatory law(s) of a country containing rules for the protection of individuals with regard to the Processing of Personal Data.
+
+“Data Subject” means a natural person who is identified or can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that person.
+
+“Device Data” means any and all technical information, personal data, usage information or other information derived from access to or use of the Hue EDK including but not limited to data that relate to end users of the Hue bridge or to the use of the Hue bridge by such end users.
+
+“Hue EDK” means the Signify Hue entertainment development kit software and any other software that Signify makes available to You under these Terms of Use that amongst others enables: i) Signify Hue bridge and bulb discovery, ii) the processing of incoming Signify Hue entertainment development kit requests and iii) the streaming of commands to effectuate light effects by means of a Signify Hue bridge device and Signify Hue bulbs.
+
+“Hue EDK Materials” means supporting materials, including but not limited to scripts, documentation and materials accompanying the Signify Hue entertainment development kit software.
+
+“Personal Data” means any information relating to a Data Subject.
+
+“Processing” means any operation or set of operations which is performed upon data, whether or not by automated means, such as collection, recording, organization, structuring, storage, adaptation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction. 
+
+1. Access & use Hue EDK and Hue EDK Materials.
+
+a. Account 
+You need to be registered as a Hue developer at the developer website http://developers.meethue.com in order to request access to the Hue EDK and Hue EDK Materials. As part of the request, you will be required to provide registration information (e.g., your contact details, description of your product, app or service, etc.). Once you have requested access to the Hue EDK, Signify may in its sole discretion approve or reject this request. In case your request is approved, you will be contacted by Signify to provide you with the Hue EDK Materials and access credentials to use the Hue EDK. You agree to keep your registration information up-to-date. You will not share your Hue developer account, the Hue EDK or Hue EDK Materials provided to you, with a third party, unless authorized by Signify in advance and in writing. For the creation of your Hue developer account we may receive certain Personal Data from you. Processing of such Personal Data is described in the Signify Privacy Notice which can be found at http://www.lighting.philips.com/main/privacy/legal-information/privacy-notice.
+
+b. License to use 
+Subject to your acceptance of these Terms of Use, Signify grants you a limited, revocable, non-transferable, non-exclusive (without the right to sublicense) right to:
+
+  1)    access and use the Hue EDK, Hue developer account and Hue EDK Materials provided to you, solely to the extent necessary for you to create a product, app or service that operates with the Hue bridge,
+ 2)   offer a service as created under the above license to end-users, provided that:
+such service provides significant additional functionality and
+end-users agree to equally or more strict terms than the Terms of Use, and/or
+3)   permit distribution of the product or app created under the above license to end-users as well as use of the product or app by the end-users, provided that:
+such product or app provides significant additional functionality and
+end-users agree to equally or more stringent terms than the Terms of Use.
+You may only access the Hue EDK and the Hue EDK Materials provided to you via your Hue developer account. The Hue EDK and the Hue EDK Materials provided to you are licensed not sold, all rights not explicitly granted are reserved by Signify or its licensors.
+
+c. Open Source Software
+Some of the software required by or included in the Hue EDK or Hue EDK Materials provided to you by us may be offered under an open source license. Open source software licenses constitute separate written agreements. To the limited extent the open source software license expressly supersedes these Terms of Use, the open source license instead governs access to the applicable open source software.
+
+d. Updates
+Signify may at its sole discretion modify or update the Hue EDK, Hue EDK Materials and the Hue bridge at any time. Signify shall try but is not obliged to give you prior notice thereof. In the event Signify makes any modification to the Hue EDK or Hue EDK Materials that affect the working of your products, apps or services with the Hue bridge and/or ecosystem, you agree to make corresponding changes to your product, app or service at your cost to ensure continued service for your end users. Signify may add, modify or remove functionalities or features at its sole discretion, and Signify does not guarantee that your product, app or service will function with any future or modified versions of the Hue EDK or Hue EDK Materials or the Hue bridge and/or ecosystem. You must regularly visit the developer website and ensure that you are using the latest Hue EDK, Hue EDK Materials, documentation and information as updated by Signify from time to time.
+
+e. “As Is”
+The HUE EDK, HUE DEVELOPER ACCOUNT AND HUE EDK MATERIALS, CONTENT OR ANY MATERIALS/INFORMATION (INCLUDING, WITHOUT LIMITATION, TEXT, IMAGES, GRAPHICS, LINKS) ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS.  TO THE FULL EXTENT PERMISSIBLE BY APPLICABLE LAW, Signify AND ITS AFFILIATES, PARTNERS, LICENSORS AND SUPPLIERS HEREBY EXPRESSLY DISCLAIM ANY AND ALL REPRESENTATIONS OR WARRANTIES AND ENDORSEMENTS OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR ANY PARTICULAR PURPOSE, NON-INFRINGEMENT OF ANY THIRD PARTY PROPRIETARY RIGHTS (INCLUDING INTELLECTUAL PROPERTY RIGHTS), OR AS TO THE OPERATION, PERFORMANCE, ACCURACY, COMPLTELENESS, USEFULNESS, AVAILABILITY, RELIABILITY, OR SECURITY OF THE HUE REMOTE API, HUE DEVELOPER MATERIALS, HUE DEVELOPER ACCOUNT, CONTENT OR ANY OTHER INFORMATION.
+NEITHER Signify NOR ITS AFFILIATES, PARTNERS, LICENSORS AND SUPPLIERS WARRANTS OR MAKES ANY REPRESENTATIONS THAT (I) THE HUE EDK, HUE DEVELOPER ACCOUNT AND THE HUE EDK MATERIALS WILL BE UNINTERRUPTED, TIMELY, SECURE, COMPLETE, OR ERROR FREE, (II) THE RESULTS THAT MAY BE OBTAINED FROM THE USE OF THE HUE EDK, HUE DEVELOPER ACCOUNT,  AND/OR THE HUE EDK MATERIALS (INCLUDING ANY INFORMATION AND MATERIALS PROVIDED OR ACCESSED) WILL BE CORRECT, COMPLETE, ACCURATE, SECURE, RELIABLE, OR OTHERWISE MEET YOUR REQUIREMENTS; (III) YOU ARE ABLE TO DEVELOP, MANUFACTURE, SELL OR OTHERWISE DISPOSE OF PRODUCTS THAT USE THE HUE EDK, HUE DEVELOPER ACCOUNT OR THE HUE EDK MATERIALS OR RELATED CONTENT OR ANY MATERIALS/INFORMATION WITH REGARDS TO THE QUALITY OR PERFORMANCE OF SUCH PRODUCTS. 
+
+2. Prohibitions
+When using the Hue EDK, Hue developer account and Hue EDK Materials provided to you, unless otherwise approved in writing by Signify, you will not:
+Use any Hue or Signify branding, trademarks or trade dress.
+Make any adaptation, modification or alteration to the Hue EDK and the Hue EDK Materials provided to you.
+Use the terms Hue, Signify or Philips in any logo or graphics.
+Distribute the source code of the Hue EDK or parts thereof.
+Distribute the Hue EDK Materials or derivatives thereof.
+Implement functionality that interferes with the core functionality of the Hue products or services or the Hue ecosystem.
+Use the Hue EDK and the Hue EDK Materials to create a competing product having substantially similar functionality to that of the Hue EDK.
+Aggregate control of Philips Lighting Hue Personal Wireless Lighting™ products and services or Device Data across multiple end users.
+Defame, abuse, harass, stalk, threaten or otherwise violate the legal rights (such as rights of privacy and publicity) of others and end users.
+Perform an action with the intent of introducing viruses, worms, defects, Trojan horses, malware or any items of a destructive nature or disabling the Hue ecosystem products, services or end users’ devices or attempting to circumvent the security setting of any of the foregoing.
+Any use or access to the Hue EDK, Hue developer account and Hue EDK Materials by anyone under the age of 13 is strictly prohibited and is a violation of these Terms of Use.
+
+In addition, you will not (i) interfere with or disrupt the Hue EDK, Hue developer account, the servers or networks providing the Hue EDK, the integrity of the Hue bridge or end user devices; (ii) tamper with the security of any of the hardware, software or networks used by Signify to make the Hue EDK, Hue developer account and Hue EDK Materials available or tamper with any customer accounts or end user devices; (iii) disable, circumvent or avoid any security device, mechanism, protocol or procedure established by Signify; (iv) use Hue products, Hue ecosystem, Hue EDK, Hue developer account or the Hue bridge or services related thereto including end user devices for surveillance or other similar purposes; (v) permit others to do any of the foregoing.
+
+3. Security
+Via your products, app or service you may collect and receive Device Data.  In the event your systems or infrastructure that are used for storage, processing or hosting Device Data are breached or compromised, or if Device Data is inadvertently exposed to non-authorized third parties or you have become aware of any actual or suspected security incident involving Device Data, you shall notify Signify promptly of such a breach or exposure (in any event within 2 (two) hours of becoming aware of such exposure) and provide all available information, including i) a root cause analysis, ii) remediation steps and compensating controls to ensure such a breach does not occur in the future and iii) an assessment of the likely impact of such event on Signify. Notification of breach or exposure shall be given by e-mail addressed to philipshuedev@philips.com.
+
+4. Privacy and Personal Data
+With regards to the Processing of Personal Data of end user(s), you acknowledge and agree that you will: 
+comply with Applicable Data Protection Laws; and
+be autonomously responsible to collect and further process Personal Data in accordance with requirements of Applicable Data Protection Laws, in particular for justification of any transmission of such Personal Data to another party, including providing any required notices and obtaining any required consents, and for its decisions concerning the Processing and use of the Personal Data; and
+not do anything which may cause Signify, its affiliates, licensors, suppliers, agents, representatives and employees to infringe any Applicable Data Protection Laws.
+
+5. End of License
+In the event of any breach of these Terms of Use, the licenses granted to you herein will terminate automatically without notice. In such event, Signify is entitled to immediately terminate without notice your Hue developer account, access to the Hue API, Hue remote API and to Hue EDK Materials through the Hue developer account.  In the event there is no traffic detected via your product, app or service for a period of six (6) months, then Signify is entitled to terminate your access to the Hue developer account, Hue API, Hue remote API and Hue developer materials without notice. In both such events, you will immediately cease i) using the Hue EDK, Hue EDK Materials, and any materials based on the Hue EDK, and ii) accessing the Hue developer account provided to you. In addition, you shall promptly return or securely dispose of or destroy all such materials in your possession or control and if required by Signify, certify such disposal or destruction in writing.  
+Provisions of these Terms of Use that by their nature are contemplated to endure past termination of the license such as, but not limited to, Confidentiality will survive and continue in full force and effect.
+
+6. Feedback
+We welcome any suggestions regarding changes, reconfigurations, improvements or enhancements to the Hue EDK and/or Hue EDK Materials and/or to the Hue bridge and/or Hue ecosystem (“Feedback”). Please note, however, that if you provide us with Feedback, Signify will own all rights (including intellectual property rights) therein as of the date of receipt of such Feedback. You hereby assign your entire right, title and interest in and to all such Feedback to Signify and shall have all of your employees who have contributed to such Feedback assign their entire right, title and interest in same to Signify and shall do all acts which may be required for confirming foregoing assignment or for perfecting Signify’s title thereto.
+Signify shall at all times be entitled to use the Feedback, free of charge, at any time even after termination of these Terms of Use at its sole discretion for any purposes whatsoever, including but not limited to, to aggregate or compile Feedback with other data, create intellectual property rights or derivative works of or modify or adapt Feedback to provide, maintain, and improve products and services, and to develop new products or features or services and to grant licenses to third parties in relation to the foregoing, without any liability or obligation or restriction, whether in relation to you or any third party.
+You acknowledge that nothing in these Terms of Use will impair Signify’s or any third party’s right to develop, manufacture, acquire, license, market, promote, or distribute products or technologies that perform the same or similar functions as, or otherwise compete with your product, app or service.
+
+7. Export Control
+You acknowledge that certain transactions of Signify are subject to export control laws and regulations, including but not limited to the UN, EU and the USA export control laws and regulations, which prohibit export or diversion of certain products and technology to certain countries (“Export Regulations”).
+You will comply in all respects with the export, re-export and transfer restrictions set forth in such Export Regulations or in export licenses (if any) for any product, technology, documentation and the Hue EDK and Hue EDK Materials supplied to you as well as for any product, app or service sold or otherwise disposed of by you or on your behalf.
+
+8. Your warranties and indemnities 
+You represent and warrant that:
+(i) you shall comply with these Terms of Use and the applicable laws at all times during accessing and use of the Hue EDK, the Hue EDK Materials and the Hue developer account;
+(ii) you shall comply with these Terms of Use and the applicable laws at all times during the making available of apps, services, products based on materials made available under these Terms of Use to distributors and end users;
+(iii) any making available of the products, apps and/or services created using the Hue EDK and/or Hue EDK Materials by you will be subject to downstream recipients having accepted terms equally or more limitative than the terms of these Terms of Use;
+(iv) you will inform the end users that your app, product or service is provided by you to the end user and that it is not a Signify app, product or service;
+(v) the light script(s), apps, products or services you create do not trigger or cause any adverse health effect to an end user or any other person, especially considering the known light combinations and/or frequencies, etc. that could cause epileptic seizures, migraines etc. to a user and ensure that such light combinations are not included in your light script(s), apps, products or services;
+(vi) before a user starts using your light script (s), app, product or service - you will inform user in writing about the possible adverse effects of certain light combinations on their health and advise them to immediately stop using such specific feature, light script(s), app, product or service if they experience any discomfort; and
+(vii) either you own the content or assets that you will use to create the light script(s), apps, products or services, or you have obtained all the necessary rights, licenses and/or permits from the owner of such content or assets that you use in order to create your light script(s), apps, products or services.
+
+You will indemnify and hold Signify, Signify affiliates and their licensors harmless from and against any losses, damages, liability and/or claims (including but not limited to all direct, indirect and reasonable costs and expenses, reasonable attorney’s fees, etc.) arising out of or relating to breach of these Terms of Use by you. 
+If you accept and agree to the Terms of Use on behalf of your company or organization, you further represent and warrant that you are authorized to accept the Terms of Use on their behalf.
+
+9. Disclaimer of liability
+Signify, ITS AFFILIATES, AND THEIR LICENSORS WILL NOT BE LIABLE FOR ANY INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL,  COMPENSATORY, SPECIAL, MULTIPLE OR PUNITIVE DAMAGES, LOST ANTICIPATED PROFITS, LOSS OF GOODWILL, LOSS OF DATA, BUSINESS INTERRUPTION, ACCURACY OF RESULTS, OR COMPUTER FAILURE OR MALFUNCTION OR SIMILAR DAMAGES, WHETHER ARISING IN TORT (INCLUDING NEGLIGENCE), CONTRACT OR OTHERWISE, ARISING FROM OR RELATING TO THESE TERMS OF USE INCLDUDING WITHOUT LIMITATION USE OF THE HUE EDK, HUE DEVELOPER ACCOUNT OR ANY HUE  EDK MATERIALS, HUE ECOSYSTEM, OR FROM ANY SERVICES, MATERIALS, INPUTS OR INFORMATION PROVIDED UNDER THESE TERMS OF USE OR Signify’ PERFORMANCE OR FAILURE TO PERFORM UNDER THESE TERMS OF USE, WHETHER OR NOT Signify HAS BEEN ADVISED OF SUCH DAMAGES. IF ANY LIMITATION ON REMEDIES, DAMAGES OR LIABILITY IS PROHIBITED OR RESTRICTED BY LAW, Signify SHALL REMAIN ENTITLED TO THE MAXIMUM DISCLAIMERS AND LIMITATIONS AVAILABLE AT LAW.
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, Signify’S, ITS AFFILIATES’ AND THEIR LICENSOR’S ENTIRE LIABILITY FOR ANY AND ALL DIRECT DAMAGES HOWEVER CAUSED ARISING OUT OF OR RELATING TO THESE TERMS OF USE IS LIMITED TO FIFTY EURO’S.
+
+10. Confidentiality
+You undertake that you shall not disclose to any person any information pertaining to the Hue EDK, Hue developer account and the Hue EDK Materials or other information of a confidential nature provided to you by Signify including Feedback (“Confidential Information”), except as permitted by this clause.
+You may disclose the Confidential Information:
+to your employees, officers, representatives or advisers who need to know such information for the purposes of carrying out your obligations under these Terms of Use. You shall ensure that your employees, officers, representatives or advisers to whom you disclose the Confidential Information comply with this clause; and
+as may be required by law, court order or any governmental or regulatory authority.
+You shall not use the Confidential Information for any purpose other than to perform your obligations under these Terms of Use.
+
+11. Modification of the Terms of Use
+These Terms of Use may be amended by Signify at any time. Latest version of Terms of Use can be found at http://www.developers.meethue.com/content/EDK-terms-use. By continuing to access or use the Hue EDK, Hue developer account and the Hue EDK Materials after such posting, you will be deemed to have accepted such amendments. You are advised to regularly review these Terms of Use and related terms and conditions, if any.  
+
+12. Assignment and severability
+You shall not assign, transfer, mortgage, charge, subcontract, or deal in any other manner with any of your rights and obligations under these Terms of Use without the prior written consent of Signify, which may be withheld, delayed or rejected in Signify’ sole discretion. If any provision of these Terms of Use is held to be invalid, illegal or unenforceable for any reason by any court or other competent body then the remaining provisions shall remain in full force and effect.
+ 
+13. Governing Law & Jurisdiction 
+These Terms of Use will be governed and construed by the law of the Netherlands without regard to conflicts of law provisions thereof. The competent court in the Netherlands shall have sole jurisdiction. 

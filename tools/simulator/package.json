@@ -1,0 +1,28 @@
+{
+  "name": "hue-simulator-server",
+  "version": "1.0.0",
+  "description": "Simulates Hue Bridge streaming interface",
+  "main": "server/hueServer.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jquery": "^3.5.1",
+    "jquery-ui-dist": "^1.12.1",
+    "node-rest-client": "^3.1.0",
+    "pixi.js": "^4.8.9",
+    "request": "^2.88.2",
+    "serve-favicon": "^2.5.0",
+    "socket.io": "^2.3.0",
+    "spdy": "^4.0.2",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "SEE LICENSE IN ../../HueLicense.txt",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PhilipsHue/interview.git"
+  }
+}

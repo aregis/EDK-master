@@ -1,0 +1,78 @@
+diff --git a/CMake/OtherTests.cmake b/CMake/OtherTests.cmake
+index 80c0b7275..9e4fe0c88 100644
+--- a/CMake/OtherTests.cmake
++++ b/CMake/OtherTests.cmake
+@@ -253,7 +253,7 @@ if(NOT DEFINED CMAKE_TOOLCHAIN_FILE)
+   elseif(HAVE_POLL_H)
+     set(CMAKE_REQUIRED_FLAGS "-DHAVE_POLL_H")
+   endif()
+-  check_c_source_runs("
++  check_c_source_compiles("
+     #include <stdlib.h>
+     #include <sys/time.h>
+ 
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 5b92c2b61..b07591a58 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -364,7 +364,7 @@ if(WIN32)
+   cmake_dependent_option(CURL_WINDOWS_SSPI "Use windows libraries to allow NTLM authentication without openssl" ON
+     CURL_USE_SCHANNEL OFF)
+ endif()
+-cmake_dependent_option(CURL_USE_MBEDTLS "Enable mbedTLS for SSL/TLS" OFF CURL_ENABLE_SSL OFF)
++cmake_dependent_option(CURL_USE_MBEDTLS "Enable mbedTLS for SSL/TLS" ON CURL_ENABLE_SSL ON)
+ cmake_dependent_option(CURL_USE_BEARSSL "Enable BearSSL for SSL/TLS" OFF CURL_ENABLE_SSL OFF)
+ cmake_dependent_option(CURL_USE_NSS "Enable NSS for SSL/TLS" OFF CURL_ENABLE_SSL OFF)
+ cmake_dependent_option(CURL_USE_WOLFSSL "enable wolfSSL for SSL/TLS" OFF CURL_ENABLE_SSL OFF)
+@@ -411,13 +411,13 @@ if(CMAKE_USE_OPENSSL)
+   add_definitions(-DOPENSSL_SUPPRESS_DEPRECATED)
+ endif()
+
+-if(CURL_USE_MBEDTLS)
+-  find_package(MbedTLS REQUIRED)
+-  set(SSL_ENABLED ON)
+-  set(USE_MBEDTLS ON)
+-  list(APPEND CURL_LIBS ${MBEDTLS_LIBRARIES})
+-  include_directories(${MBEDTLS_INCLUDE_DIRS})
+-endif()
++if(USE_MBEDTLS)
++  if(CURL_WITH_MBEDTLS)
++    include_directories(${CURL_WITH_MBEDTLS}/include)
++    link_directories(${CURL_WITH_MBEDTLS}/lib)
++    link_libraries(mbedtls mbedx509 mbedcrypto)
++  endif(CURL_WITH_MBEDTLS)
++endif(USE_MBEDTLS)
+ 
+ if(CURL_USE_BEARSSL)
+   find_package(BearSSL REQUIRED)
+@@ -453,6 +453,9 @@ if(USE_NGHTTP2)
+   find_package(NGHTTP2 REQUIRED)
+   include_directories(${NGHTTP2_INCLUDE_DIRS})
+   list(APPEND CURL_LIBS ${NGHTTP2_LIBRARIES})
++  if(NOT BUILD_SHARED_LIBS)
++    add_definitions(-DNGHTTP2_STATICLIB)
++  endif()
+ endif()
+ 
+ function(CheckQuicSupportInOpenSSL)
+@@ -1055,7 +1058,7 @@ check_symbol_exists(setsockopt     "${CURL_INCLUDES}" HAVE_SETSOCKOPT)
+ check_function_exists(mach_absolute_time HAVE_MACH_ABSOLUTE_TIME)
+ check_symbol_exists(inet_pton      "${CURL_INCLUDES}" HAVE_INET_PTON)
+ 
+-check_symbol_exists(fsetxattr "${CURL_INCLUDES}" HAVE_FSETXATTR)
++#check_symbol_exists(fsetxattr "${CURL_INCLUDES}" HAVE_FSETXATTR)
+ if(HAVE_FSETXATTR)
+   foreach(CURL_TEST HAVE_FSETXATTR_5 HAVE_FSETXATTR_6)
+     curl_internal_test(${CURL_TEST})
+@@ -1142,6 +1145,10 @@ foreach(CURL_TEST
+   curl_internal_test(${CURL_TEST})
+ endforeach()
+ 
++if(HAVE_GLIBC_STRERROR_R)
++  set(HAVE_POSIX_STRERROR_R "")
++endif(HAVE_GLIBC_STRERROR_R)
++
+ # Check for reentrant
+ foreach(CURL_TEST
+     HAVE_GETHOSTBYNAME_R_3
+

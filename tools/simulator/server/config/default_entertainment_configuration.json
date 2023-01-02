@@ -1,0 +1,1624 @@
+{
+    "errors": [],
+    "data": [
+        {
+            "channels": [
+                {
+                    "channel_id": 0,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "4cdbfb76-62a5-40aa-b559-e4323dbdd8b7",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": -0.8,
+                        "y": 0.8,
+                        "z": 0.0
+                    }
+                },
+                {
+                    "channel_id": 1,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "ec1e76bf-6b95-4466-b7c3-2a1e88045f44",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": -0.3,
+                        "y": 0.8,
+                        "z": 0.0
+                    }
+                },
+                {
+                    "channel_id": 2,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "7bcaad68-c75e-403f-a184-f1c40dfce12d",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": 0,
+                        "y": 0.8,
+                        "z": 0.0
+                    }
+                },
+                {
+                    "channel_id": 3,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "3503b48d-5d0f-4fa3-a21b-3bffa19a1bdd",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": 0.3,
+                        "y": 0.8,
+                        "z": 0.0
+                    }
+                },
+                {
+                    "channel_id": 4,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "f99d1a33-4c7f-4983-adb2-78ba2338fddc",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": 0.8,
+                        "y": 0.8,
+                        "z": 0.0
+                    }
+                },
+                {
+                    "channel_id": 5,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "b3854f92-385d-4670-a54b-2bf543fc0f73",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": -0.8,
+                        "y": 0.4,
+                        "z": 0.0
+                    }
+                },
+                {
+                    "channel_id": 6,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "0b341766-f553-4fb2-acc1-b763d3a90437",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": -0.5,
+                        "y": 0.4,
+                        "z": 0.0
+                    }
+                },
+                {
+                    "channel_id": 7,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "3f8b1feb-af4f-4f48-9399-35e7aebb56d0",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.4,
+                        "z": 0.0
+                    }
+                },
+                {
+                    "channel_id": 8,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "2316d8dd-ab6a-4790-9ca9-2f0950d799a5",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": 0.5,
+                        "y": 0.4,
+                        "z": 0.0
+                    }
+                },
+                {
+                    "channel_id": 9,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "a350e06e-5f37-411f-a602-efa777398fb4",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": 0.8,
+                        "y": 0.4,
+                        "z": 0.0
+                    }
+                },
+                {
+                    "channel_id": 10,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "a7bc1189-82ca-4ebc-ac4c-f93f56755d59",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": -0.8,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                },
+                {
+                    "channel_id": 11,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "36cfa41b-db9b-46d8-ba70-386baae9bb10",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": -0.5,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                },
+                {
+                    "channel_id": 12,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "61e0c130-2145-4851-917c-0c262ca80f5d",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                },
+                {
+                    "channel_id": 13,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "222eec40-deb8-4055-b247-055b1d8c05eb",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": 0.5,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                },
+                {
+                    "channel_id": 14,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "f9500c5c-19a5-4fe5-8003-8e22963a09e0",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": 0.8,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                },
+                {
+                    "channel_id": 15,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "4dcb46ac-7536-4dce-8bf0-a1ae1b76e751",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": -0.8,
+                        "y": -0.4,
+                        "z": 0.0
+                    }
+                },
+                {
+                    "channel_id": 16,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "6b1246a1-d5d4-4106-ae93-4a93af158212",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": -0.5,
+                        "y": -0.4,
+                        "z": 0.0
+                    }
+                },
+                {
+                    "channel_id": 17,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "37cc4a43-d3eb-4d3a-ad4a-7aa639400799",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": 0.0,
+                        "y": -0.4,
+                        "z": 0.0
+                    }
+                },
+                {
+                    "channel_id": 18,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "6d3c4d1e-599a-47ec-985b-3d6d10221409",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": 0.5,
+                        "y": -0.4,
+                        "z": 0.0
+                    }
+                },
+                {
+                    "channel_id": 19,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "9077ca4d-a413-47cd-a1e4-492ed73823fb",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": 0.8,
+                        "y": -0.4,
+                        "z": 0.0
+                    }
+                },
+                {
+                    "channel_id": 20,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "4d33e591-d557-47b6-aaf5-2469ddc45c6f",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": -0.8,
+                        "y": -0.8,
+                        "z": 0.0
+                    }
+                },
+                {
+                    "channel_id": 21,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "7fa069ba-1336-4ded-baec-08ae84851df8",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": -0.3,
+                        "y": -0.8,
+                        "z": 0.0
+                    }
+                },
+                {
+                    "channel_id": 22,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "1f60107c-d64c-4064-a9ee-4e75ccb79987",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": 0.0,
+                        "y": -0.8,
+                        "z": 0.0
+                    }
+                },
+                {
+                    "channel_id": 23,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "49c182dc-d2c2-4bf1-ae30-de75e380e494",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": 0.3,
+                        "y": -0.8,
+                        "z": 0
+                    }
+                },
+                {
+                    "channel_id": 24,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "eb56fdd5-18a4-4e84-9692-23964f086654",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": 0.8,
+                        "y": -0.8,
+                        "z": 0.0
+                    }
+                }
+            ],
+            "configuration_type": "screen",
+            "id": "ab0bbf6d-488e-46b2-867b-c3f1ade30487",
+            "id_v1": "/groups/1",
+            "light_services": [
+                {
+                    "rid": "c2faaefc-1b72-4261-b5ae-bf03e1ba823a",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "fabe69f4-66d6-4582-8627-683ab37314bf",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "957b4250-1de0-4cad-8208-8a6b90c3fdf3",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "aff56aca-6c8c-463e-8590-135ac5799376",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "41617405-853b-439b-a5ee-4b2ac6b87948",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "b7ab4b34-3f3c-4c77-9153-40d12630c1f0",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "500cabfe-7e3e-4414-9a5a-95bcb343c5fa",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "eabac753-2695-401d-947b-5e05ebe71d57",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "be9e9c90-b29c-4dfb-a1cb-1c083cf5fd46",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "15d05868-09a9-40e4-8dec-740dfebf1659",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "7021ef5f-5128-446a-9767-786e07b1645e",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "e976728d-1276-464e-86ca-cc5136d86cdc",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "bda6482c-7e4c-4c24-9d4c-bb7334ad67b1",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "62b71cb1-d528-4e4f-9376-f9fe709a384d",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "8f54f015-15a5-4348-8558-66349d7c3c3f",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "e60b7ea4-c74b-4ffb-9897-a59087dc95a3",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "0a4be1f0-adf0-4ff7-b95a-dac87302ba15",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "dbcf4bf3-c1c2-44f1-9e01-35fab2f29850",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "406e71b4-9509-4364-b575-2a73c321b1bb",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "b86abbf9-8c11-4ac1-b2f7-f746fba52b3b",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "9983d909-0719-465b-b813-2f06c4fa943d",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "b7ea8adc-e3c1-4a83-930e-f95abcd587a8",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "7bc33b50-2d05-4dd2-a67c-44a8f02fe72a",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "ef313961-c84a-404a-b817-c879ae4d7612",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "4438e17c-9806-4e61-b26c-7e661d88daca",
+                    "rtype": "light"
+                }
+            ],
+            "locations": {
+                "service_locations": [
+                    {
+                        "position": {
+                            "x": -0.8,
+                            "y": 0.8,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "4cdbfb76-62a5-40aa-b559-e4323dbdd8b7",
+                            "rtype": "entertainment"
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": -0.3,
+                            "y": 0.8,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "ec1e76bf-6b95-4466-b7c3-2a1e88045f44",
+                            "rtype": "entertainment"
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": 0,
+                            "y": 0.8,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "7bcaad68-c75e-403f-a184-f1c40dfce12d",
+                            "rtype": "entertainment"
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": 0.3,
+                            "y": 0.8,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "3503b48d-5d0f-4fa3-a21b-3bffa19a1bdd",
+                            "rtype": "entertainment"
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": 0.8,
+                            "y": 0.8,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "f99d1a33-4c7f-4983-adb2-78ba2338fddc",
+                            "rtype": "entertainment"
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": -0.8,
+                            "y": 0.4,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "b3854f92-385d-4670-a54b-2bf543fc0f73",
+                            "rtype": "entertainment"
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": -0.5,
+                            "y": 0.4,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "0b341766-f553-4fb2-acc1-b763d3a90437",
+                            "rtype": "entertainment"
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": 0.0,
+                            "y": 0.4,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "3f8b1feb-af4f-4f48-9399-35e7aebb56d0",
+                            "rtype": "entertainment"
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": 0.5,
+                            "y": 0.4,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "2316d8dd-ab6a-4790-9ca9-2f0950d799a5",
+                            "rtype": "entertainment"
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": 0.8,
+                            "y": 0.4,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "a350e06e-5f37-411f-a602-efa777398fb4",
+                            "rtype": "entertainment"
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": -0.8,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "a7bc1189-82ca-4ebc-ac4c-f93f56755d59",
+                            "rtype": "entertainment"
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": -0.5,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "36cfa41b-db9b-46d8-ba70-386baae9bb10",
+                            "rtype": "entertainment"
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "61e0c130-2145-4851-917c-0c262ca80f5d",
+                            "rtype": "entertainment"
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": 0.5,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "222eec40-deb8-4055-b247-055b1d8c05eb",
+                            "rtype": "entertainment"
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": 0.8,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "f9500c5c-19a5-4fe5-8003-8e22963a09e0",
+                            "rtype": "entertainment"
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": -0.8,
+                            "y": -0.4,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "4dcb46ac-7536-4dce-8bf0-a1ae1b76e751",
+                            "rtype": "entertainment"
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": -0.5,
+                            "y": -0.4,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "6b1246a1-d5d4-4106-ae93-4a93af158212",
+                            "rtype": "entertainment"
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": 0.0,
+                            "y": -0.4,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "37cc4a43-d3eb-4d3a-ad4a-7aa639400799",
+                            "rtype": "entertainment"
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": 0.5,
+                            "y": -0.4,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "6d3c4d1e-599a-47ec-985b-3d6d10221409",
+                            "rtype": "entertainment"
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": 0.8,
+                            "y": -0.4,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "9077ca4d-a413-47cd-a1e4-492ed73823fb",
+                            "rtype": "entertainment"
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": -0.8,
+                            "y": -0.8,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "4d33e591-d557-47b6-aaf5-2469ddc45c6f",
+                            "rtype": "entertainment"
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": -0.3,
+                            "y": -0.8,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "7fa069ba-1336-4ded-baec-08ae84851df8",
+                            "rtype": "entertainment"
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": 0.0,
+                            "y": -0.8,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "1f60107c-d64c-4064-a9ee-4e75ccb79987",
+                            "rtype": "entertainment"
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": 0.3,
+                            "y": -0.8,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "49c182dc-d2c2-4bf1-ae30-de75e380e494",
+                            "rtype": "entertainment"
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": 0.8,
+                            "y": -0.8,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "eb56fdd5-18a4-4e84-9692-23964f086654",
+                            "rtype": "entertainment"
+                        }
+                    }
+                ]
+            },
+            "name": "PC_25_Living",
+            "status": "inactive",
+            "stream_proxy": {
+                "mode": "auto",
+                "node": {
+                    "rid": "415ed4d1-cf04-497f-a45b-c65ad0059626",
+                    "rtype": "entertainment"
+                }
+            },
+            "type": "entertainment_configuration"
+        },
+		{
+            "channels": [
+                {
+                    "channel_id": 0,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "4cdbfb76-62a5-40aa-b559-e4323dbdd8b7",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": -0.8,
+                        "y": 0.8,
+                        "z": 0.0
+                    }
+                },
+                {
+                    "channel_id": 1,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "ec1e76bf-6b95-4466-b7c3-2a1e88045f44",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": -0.3,
+                        "y": 0.8,
+                        "z": 0.0
+                    }
+                },                
+                {
+                    "channel_id": 3,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "3503b48d-5d0f-4fa3-a21b-3bffa19a1bdd",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": 0.3,
+                        "y": 0.8,
+                        "z": 0.0
+                    }
+                },
+                {
+                    "channel_id": 4,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "f99d1a33-4c7f-4983-adb2-78ba2338fddc",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": 0.8,
+                        "y": 0.8,
+                        "z": 0.0
+                    }
+                },                
+                {
+                    "channel_id": 10,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "a7bc1189-82ca-4ebc-ac4c-f93f56755d59",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": -0.8,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                },                
+                {
+                    "channel_id": 12,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "61e0c130-2145-4851-917c-0c262ca80f5d",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                },                
+                {
+                    "channel_id": 14,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "f9500c5c-19a5-4fe5-8003-8e22963a09e0",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": 0.8,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                },                
+                {
+                    "channel_id": 20,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "4d33e591-d557-47b6-aaf5-2469ddc45c6f",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": -0.8,
+                        "y": -0.8,
+                        "z": 0.0
+                    }
+                },                
+                {
+                    "channel_id": 22,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "1f60107c-d64c-4064-a9ee-4e75ccb79987",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": 0.0,
+                        "y": -0.8,
+                        "z": 0.0
+                    }
+                },                
+                {
+                    "channel_id": 24,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "eb56fdd5-18a4-4e84-9692-23964f086654",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": 0.8,
+                        "y": -0.8,
+                        "z": 0.0
+                    }
+                }
+            ],
+            "configuration_type": "screen",
+            "id": "32cff5c5-eba5-447c-a968-9da26e41eaed",
+            "id_v1": "/groups/2",
+            "light_services": [
+                {
+                    "rid": "c2faaefc-1b72-4261-b5ae-bf03e1ba823a",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "fabe69f4-66d6-4582-8627-683ab37314bf",
+                    "rtype": "light"
+                },                
+                {
+                    "rid": "aff56aca-6c8c-463e-8590-135ac5799376",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "41617405-853b-439b-a5ee-4b2ac6b87948",
+                    "rtype": "light"
+                },                
+                {
+                    "rid": "7021ef5f-5128-446a-9767-786e07b1645e",
+                    "rtype": "light"
+                },                
+                {
+                    "rid": "bda6482c-7e4c-4c24-9d4c-bb7334ad67b1",
+                    "rtype": "light"
+                },                
+                {
+                    "rid": "8f54f015-15a5-4348-8558-66349d7c3c3f",
+                    "rtype": "light"
+                },                
+                {
+                    "rid": "9983d909-0719-465b-b813-2f06c4fa943d",
+                    "rtype": "light"
+                },                
+                {
+                    "rid": "7bc33b50-2d05-4dd2-a67c-44a8f02fe72a",
+                    "rtype": "light"
+                },                
+                {
+                    "rid": "4438e17c-9806-4e61-b26c-7e661d88daca",
+                    "rtype": "light"
+                }
+            ],
+            "locations": {
+                "service_locations": [
+                    {
+                        "position": {
+                            "x": -0.8,
+                            "y": 0.8,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "4cdbfb76-62a5-40aa-b559-e4323dbdd8b7",
+                            "rtype": "entertainment"
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": -0.3,
+                            "y": 0.8,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "ec1e76bf-6b95-4466-b7c3-2a1e88045f44",
+                            "rtype": "entertainment"
+                        }
+                    },                    
+                    {
+                        "position": {
+                            "x": 0.3,
+                            "y": 0.8,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "3503b48d-5d0f-4fa3-a21b-3bffa19a1bdd",
+                            "rtype": "entertainment"
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": 0.8,
+                            "y": 0.8,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "f99d1a33-4c7f-4983-adb2-78ba2338fddc",
+                            "rtype": "entertainment"
+                        }
+                    },                    
+                    {
+                        "position": {
+                            "x": -0.8,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "a7bc1189-82ca-4ebc-ac4c-f93f56755d59",
+                            "rtype": "entertainment"
+                        }
+                    },                    
+                    {
+                        "position": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "61e0c130-2145-4851-917c-0c262ca80f5d",
+                            "rtype": "entertainment"
+                        }
+                    },                    
+                    {
+                        "position": {
+                            "x": 0.8,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "f9500c5c-19a5-4fe5-8003-8e22963a09e0",
+                            "rtype": "entertainment"
+                        }
+                    },                    
+                    {
+                        "position": {
+                            "x": -0.8,
+                            "y": -0.8,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "4d33e591-d557-47b6-aaf5-2469ddc45c6f",
+                            "rtype": "entertainment"
+                        }
+                    },                    
+                    {
+                        "position": {
+                            "x": 0.0,
+                            "y": -0.8,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "1f60107c-d64c-4064-a9ee-4e75ccb79987",
+                            "rtype": "entertainment"
+                        }
+                    },                    
+                    {
+                        "position": {
+                            "x": 0.8,
+                            "y": -0.8,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "eb56fdd5-18a4-4e84-9692-23964f086654",
+                            "rtype": "entertainment"
+                        }
+                    }
+                ]
+            },
+            "name": "XBOX_10_Mancave",
+            "status": "inactive",
+            "stream_proxy": {
+                "mode": "auto",
+                "node": {
+                    "rid": "415ed4d1-cf04-497f-a45b-c65ad0059626",
+                    "rtype": "entertainment"
+                }
+            },
+            "type": "entertainment_configuration"
+        },
+		{
+            "channels": [
+                {
+                    "channel_id": 0,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "4cdbfb76-62a5-40aa-b559-e4323dbdd8b7",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": -0.8,
+                        "y": 0.8,
+                        "z": 0.0
+                    }
+                },                
+                {
+                    "channel_id": 2,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "7bcaad68-c75e-403f-a184-f1c40dfce12d",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": 0,
+                        "y": 0.8,
+                        "z": 0.0
+                    }
+                },                
+                {
+                    "channel_id": 4,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "f99d1a33-4c7f-4983-adb2-78ba2338fddc",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": 0.8,
+                        "y": 0.8,
+                        "z": 0.0
+                    }
+                },                
+                {
+                    "channel_id": 20,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "4d33e591-d557-47b6-aaf5-2469ddc45c6f",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": -0.8,
+                        "y": -0.8,
+                        "z": 0.0
+                    }
+                },                
+                {
+                    "channel_id": 24,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "eb56fdd5-18a4-4e84-9692-23964f086654",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": 0.8,
+                        "y": -0.8,
+                        "z": 0.0
+                    }
+                }
+            ],
+            "configuration_type": "screen",
+            "id": "0346c322-f53b-460b-9a17-0cc4b9121277",
+            "id_v1": "/groups/3",
+            "light_services": [
+                {
+                    "rid": "c2faaefc-1b72-4261-b5ae-bf03e1ba823a",
+                    "rtype": "light"
+                },                
+                {
+                    "rid": "957b4250-1de0-4cad-8208-8a6b90c3fdf3",
+                    "rtype": "light"
+                },                
+                {
+                    "rid": "41617405-853b-439b-a5ee-4b2ac6b87948",
+                    "rtype": "light"
+                },                
+                {
+                    "rid": "9983d909-0719-465b-b813-2f06c4fa943d",
+                    "rtype": "light"
+                },                
+                {
+                    "rid": "4438e17c-9806-4e61-b26c-7e661d88daca",
+                    "rtype": "light"
+                }
+            ],
+            "locations": {
+                "service_locations": [
+                    {
+                        "position": {
+                            "x": -0.8,
+                            "y": 0.8,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "4cdbfb76-62a5-40aa-b559-e4323dbdd8b7",
+                            "rtype": "entertainment"
+                        }
+                    },                    
+                    {
+                        "position": {
+                            "x": 0,
+                            "y": 0.8,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "7bcaad68-c75e-403f-a184-f1c40dfce12d",
+                            "rtype": "entertainment"
+                        }
+                    },                    
+                    {
+                        "position": {
+                            "x": 0.8,
+                            "y": 0.8,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "f99d1a33-4c7f-4983-adb2-78ba2338fddc",
+                            "rtype": "entertainment"
+                        }
+                    },                    
+                    {
+                        "position": {
+                            "x": -0.8,
+                            "y": -0.8,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "4d33e591-d557-47b6-aaf5-2469ddc45c6f",
+                            "rtype": "entertainment"
+                        }
+                    },                    
+                    {
+                        "position": {
+                            "x": 0.8,
+                            "y": -0.8,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "eb56fdd5-18a4-4e84-9692-23964f086654",
+                            "rtype": "entertainment"
+                        }
+                    }
+                ]
+            },
+            "name": "PS4_5_Bedroom",
+            "status": "inactive",
+            "stream_proxy": {
+                "mode": "auto",
+                "node": {
+                    "rid": "415ed4d1-cf04-497f-a45b-c65ad0059626",
+                    "rtype": "entertainment"
+                }
+            },
+            "type": "entertainment_configuration"
+        },
+		{
+            "channels": [
+                {
+                    "channel_id": 0,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "4cdbfb76-62a5-40aa-b559-e4323dbdd8b7",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": -0.8,
+                        "y": 0.8,
+                        "z": 0.0
+                    }
+                },                
+                {
+                    "channel_id": 2,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "7bcaad68-c75e-403f-a184-f1c40dfce12d",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": 0,
+                        "y": 0.8,
+                        "z": 0.0
+                    }
+                },                
+                {
+                    "channel_id": 4,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "f99d1a33-4c7f-4983-adb2-78ba2338fddc",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": 0.8,
+                        "y": 0.8,
+                        "z": 0.0
+                    }
+                }
+            ],
+            "configuration_type": "screen",
+            "id": "0a453187-fc9d-4b6e-b107-82f527192079",
+            "id_v1": "/groups/4",
+            "light_services": [
+                {
+                    "rid": "c2faaefc-1b72-4261-b5ae-bf03e1ba823a",
+                    "rtype": "light"
+                },                
+                {
+                    "rid": "957b4250-1de0-4cad-8208-8a6b90c3fdf3",
+                    "rtype": "light"
+                },                
+                {
+                    "rid": "41617405-853b-439b-a5ee-4b2ac6b87948",
+                    "rtype": "light"
+                }
+            ],
+            "locations": {
+                "service_locations": [
+                    {
+                        "position": {
+                            "x": -0.8,
+                            "y": 0.8,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "4cdbfb76-62a5-40aa-b559-e4323dbdd8b7",
+                            "rtype": "entertainment"
+                        }
+                    },                    
+                    {
+                        "position": {
+                            "x": 0,
+                            "y": 0.8,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "7bcaad68-c75e-403f-a184-f1c40dfce12d",
+                            "rtype": "entertainment"
+                        }
+                    },                    
+                    {
+                        "position": {
+                            "x": 0.8,
+                            "y": 0.8,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "f99d1a33-4c7f-4983-adb2-78ba2338fddc",
+                            "rtype": "entertainment"
+                        }
+                    }
+                ]
+            },
+            "name": "Switch_3_Guestroom",
+            "status": "inactive",
+            "stream_proxy": {
+                "mode": "auto",
+                "node": {
+                    "rid": "415ed4d1-cf04-497f-a45b-c65ad0059626",
+                    "rtype": "entertainment"
+                }
+            },
+            "type": "entertainment_configuration"
+        },
+		{
+            "channels": [                
+                {
+                    "channel_id": 8,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "2316d8dd-ab6a-4790-9ca9-2f0950d799a5",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": 0.5,
+                        "y": 0.4,
+                        "z": 0.0
+                    }
+                },
+                {
+                    "channel_id": 9,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "a350e06e-5f37-411f-a602-efa777398fb4",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": 0.8,
+                        "y": 0.4,
+                        "z": 0.0
+                    }
+                },                
+                {
+                    "channel_id": 18,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "6d3c4d1e-599a-47ec-985b-3d6d10221409",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": 0.5,
+                        "y": -0.4,
+                        "z": 0.0
+                    }
+                },
+                {
+                    "channel_id": 19,
+                    "members": [
+                        {
+                            "index": 0,
+                            "service": {
+                                "rid": "9077ca4d-a413-47cd-a1e4-492ed73823fb",
+                                "rtype": "entertainment"
+                            }
+                        }
+                    ],
+                    "position": {
+                        "x": 0.8,
+                        "y": -0.4,
+                        "z": 0.0
+                    }
+                }
+            ],
+            "configuration_type": "screen",
+            "id": "e3337a0d-24d7-47c5-8624-76f0265bed72",
+            "id_v1": "/groups/5",
+            "light_services": [                
+                {
+                    "rid": "be9e9c90-b29c-4dfb-a1cb-1c083cf5fd46",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "15d05868-09a9-40e4-8dec-740dfebf1659",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "406e71b4-9509-4364-b575-2a73c321b1bb",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "b86abbf9-8c11-4ac1-b2f7-f746fba52b3b",
+                    "rtype": "light"
+                }
+            ],
+            "locations": {
+                "service_locations": [                    
+                    {
+                        "position": {
+                            "x": 0.5,
+                            "y": 0.4,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "2316d8dd-ab6a-4790-9ca9-2f0950d799a5",
+                            "rtype": "entertainment"
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": 0.8,
+                            "y": 0.4,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "a350e06e-5f37-411f-a602-efa777398fb4",
+                            "rtype": "entertainment"
+                        }
+                    },                    
+                    {
+                        "position": {
+                            "x": 0.5,
+                            "y": -0.4,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "6d3c4d1e-599a-47ec-985b-3d6d10221409",
+                            "rtype": "entertainment"
+                        }
+                    },
+                    {
+                        "position": {
+                            "x": 0.8,
+                            "y": -0.4,
+                            "z": 0.0
+                        },
+                        "service": {
+                            "rid": "9077ca4d-a413-47cd-a1e4-492ed73823fb",
+                            "rtype": "entertainment"
+                        }
+                    }
+                ]
+            },
+            "name": "Strange_4_Test",
+            "status": "inactive",
+            "stream_proxy": {
+                "mode": "auto",
+                "node": {
+                    "rid": "415ed4d1-cf04-497f-a45b-c65ad0059626",
+                    "rtype": "entertainment"
+                }
+            },
+            "type": "entertainment_configuration"
+        }
+    ]
+}

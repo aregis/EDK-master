@@ -1,0 +1,8 @@
+/bin
+/lib/native
+/lib/libhuestream_java_managed.jar
+/classes
+/bridge.json
+/integration_tests.iml
+/.idea
+/junit

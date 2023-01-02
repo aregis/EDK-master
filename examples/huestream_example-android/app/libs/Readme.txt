@@ -1,0 +1,1 @@
+Copy hue-edk-(debug/release).arr from bin here and rename hue-edk.aar.

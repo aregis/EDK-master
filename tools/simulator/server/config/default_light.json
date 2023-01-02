@@ -1,0 +1,1030 @@
+{
+    "errors": [],
+    "data": [
+        {
+            "color": {
+                "gamut": {
+                    "blue": {
+                        "x": 0.1532,
+                        "y": 0.0475
+                    },
+                    "green": {
+                        "x": 0.17,
+                        "y": 0.7
+                    },
+                    "red": {
+                        "x": 0.6915,
+                        "y": 0.3083
+                    }
+                },
+                "gamut_type": "C",
+                "xy": {
+                    "x": 0.4128,
+                    "y": 0.4235
+                }
+            },
+            "color_temperature": {
+                "mirek": null
+            },
+            "dimming": {
+                "brightness": 100.0
+            },
+            "dynamics": {},
+            "id": "c2faaefc-1b72-4261-b5ae-bf03e1ba823a",
+            "id_v1": "/lights/1",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 1"
+            },
+            "mode": "normal",
+            "on": {
+                "on": true
+            },
+            "type": "light"
+        },
+		{
+            "color": {
+                "gamut": {
+                    "blue": {
+                        "x": 0.1532,
+                        "y": 0.0475
+                    },
+                    "green": {
+                        "x": 0.17,
+                        "y": 0.7
+                    },
+                    "red": {
+                        "x": 0.6915,
+                        "y": 0.3083
+                    }
+                },
+                "gamut_type": "C",
+                "xy": {
+                    "x": 0.4128,
+                    "y": 0.4235
+                }
+            },
+            "color_temperature": {
+                "mirek": null
+            },
+            "dimming": {
+                "brightness": 100.0
+            },
+            "dynamics": {},
+            "id": "fabe69f4-66d6-4582-8627-683ab37314bf",
+            "id_v1": "/lights/2",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 2"
+            },
+            "mode": "normal",
+            "on": {
+                "on": true
+            },
+            "type": "light"
+        },
+		{
+            "color": {
+                "gamut": {
+                    "blue": {
+                        "x": 0.1532,
+                        "y": 0.0475
+                    },
+                    "green": {
+                        "x": 0.17,
+                        "y": 0.7
+                    },
+                    "red": {
+                        "x": 0.6915,
+                        "y": 0.3083
+                    }
+                },
+                "gamut_type": "C",
+                "xy": {
+                    "x": 0.4128,
+                    "y": 0.4235
+                }
+            },
+            "color_temperature": {
+                "mirek": null
+            },
+            "dimming": {
+                "brightness": 100.0
+            },
+            "dynamics": {},
+            "id": "b0b1ecf5-5e75-4951-bbfd-0b7dc7885cc3",
+            "id_v1": "/lights/3",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 3"
+            },
+            "mode": "normal",
+            "on": {
+                "on": true
+            },
+            "type": "light"
+        },
+		{
+            "color": {
+                "gamut": {
+                    "blue": {
+                        "x": 0.1532,
+                        "y": 0.0475
+                    },
+                    "green": {
+                        "x": 0.17,
+                        "y": 0.7
+                    },
+                    "red": {
+                        "x": 0.6915,
+                        "y": 0.3083
+                    }
+                },
+                "gamut_type": "C",
+                "xy": {
+                    "x": 0.4128,
+                    "y": 0.4235
+                }
+            },
+            "color_temperature": {
+                "mirek": null
+            },
+            "dimming": {
+                "brightness": 100.0
+            },
+            "dynamics": {},
+            "id": "aff56aca-6c8c-463e-8590-135ac5799376",
+            "id_v1": "/lights/4",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 4"
+            },
+            "mode": "normal",
+            "on": {
+                "on": true
+            },
+            "type": "light"
+        },
+		{
+            "color": {
+                "gamut": {
+                    "blue": {
+                        "x": 0.1532,
+                        "y": 0.0475
+                    },
+                    "green": {
+                        "x": 0.17,
+                        "y": 0.7
+                    },
+                    "red": {
+                        "x": 0.6915,
+                        "y": 0.3083
+                    }
+                },
+                "gamut_type": "C",
+                "xy": {
+                    "x": 0.4128,
+                    "y": 0.4235
+                }
+            },
+            "color_temperature": {
+                "mirek": null
+            },
+            "dimming": {
+                "brightness": 100.0
+            },
+            "dynamics": {},
+            "id": "41617405-853b-439b-a5ee-4b2ac6b87948",
+            "id_v1": "/lights/5",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 5"
+            },
+            "mode": "normal",
+            "on": {
+                "on": true
+            },
+            "type": "light"
+        },
+		{
+            "color": {
+                "gamut": {
+                    "blue": {
+                        "x": 0.1532,
+                        "y": 0.0475
+                    },
+                    "green": {
+                        "x": 0.17,
+                        "y": 0.7
+                    },
+                    "red": {
+                        "x": 0.6915,
+                        "y": 0.3083
+                    }
+                },
+                "gamut_type": "C",
+                "xy": {
+                    "x": 0.4128,
+                    "y": 0.4235
+                }
+            },
+            "color_temperature": {
+                "mirek": null
+            },
+            "dimming": {
+                "brightness": 100.0
+            },
+            "dynamics": {},
+            "id": "b7ab4b34-3f3c-4c77-9153-40d12630c1f0",
+            "id_v1": "/lights/6",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 6"
+            },
+            "mode": "normal",
+            "on": {
+                "on": true
+            },
+            "type": "light"
+        },
+		{
+            "color": {
+                "gamut": {
+                    "blue": {
+                        "x": 0.1532,
+                        "y": 0.0475
+                    },
+                    "green": {
+                        "x": 0.17,
+                        "y": 0.7
+                    },
+                    "red": {
+                        "x": 0.6915,
+                        "y": 0.3083
+                    }
+                },
+                "gamut_type": "C",
+                "xy": {
+                    "x": 0.4128,
+                    "y": 0.4235
+                }
+            },
+            "color_temperature": {
+                "mirek": null
+            },
+            "dimming": {
+                "brightness": 100.0
+            },
+            "dynamics": {},
+            "id": "500cabfe-7e3e-4414-9a5a-95bcb343c5fa",
+            "id_v1": "/lights/7",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 7"
+            },
+            "mode": "normal",
+            "on": {
+                "on": true
+            },
+            "type": "light"
+        },
+		{
+            "color": {
+                "gamut": {
+                    "blue": {
+                        "x": 0.1532,
+                        "y": 0.0475
+                    },
+                    "green": {
+                        "x": 0.17,
+                        "y": 0.7
+                    },
+                    "red": {
+                        "x": 0.6915,
+                        "y": 0.3083
+                    }
+                },
+                "gamut_type": "C",
+                "xy": {
+                    "x": 0.4128,
+                    "y": 0.4235
+                }
+            },
+            "color_temperature": {
+                "mirek": null
+            },
+            "dimming": {
+                "brightness": 100.0
+            },
+            "dynamics": {},
+            "id": "eabac753-2695-401d-947b-5e05ebe71d57",
+            "id_v1": "/lights/8",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 8"
+            },
+            "mode": "normal",
+            "on": {
+                "on": true
+            },
+            "type": "light"
+        },
+		{
+            "color": {
+                "gamut": {
+                    "blue": {
+                        "x": 0.1532,
+                        "y": 0.0475
+                    },
+                    "green": {
+                        "x": 0.17,
+                        "y": 0.7
+                    },
+                    "red": {
+                        "x": 0.6915,
+                        "y": 0.3083
+                    }
+                },
+                "gamut_type": "C",
+                "xy": {
+                    "x": 0.4128,
+                    "y": 0.4235
+                }
+            },
+            "color_temperature": {
+                "mirek": null
+            },
+            "dimming": {
+                "brightness": 100.0
+            },
+            "dynamics": {},
+            "id": "be9e9c90-b29c-4dfb-a1cb-1c083cf5fd46",
+            "id_v1": "/lights/9",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 9"
+            },
+            "mode": "normal",
+            "on": {
+                "on": true
+            },
+            "type": "light"
+        },
+		{
+            "color": {
+                "gamut": {
+                    "blue": {
+                        "x": 0.1532,
+                        "y": 0.0475
+                    },
+                    "green": {
+                        "x": 0.17,
+                        "y": 0.7
+                    },
+                    "red": {
+                        "x": 0.6915,
+                        "y": 0.3083
+                    }
+                },
+                "gamut_type": "C",
+                "xy": {
+                    "x": 0.4128,
+                    "y": 0.4235
+                }
+            },
+            "color_temperature": {
+                "mirek": null
+            },
+            "dimming": {
+                "brightness": 100.0
+            },
+            "dynamics": {},
+            "id": "15d05868-09a9-40e4-8dec-740dfebf1659",
+            "id_v1": "/lights/10",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 10"
+            },
+            "mode": "normal",
+            "on": {
+                "on": true
+            },
+            "type": "light"
+        },
+		{
+            "color": {
+                "gamut": {
+                    "blue": {
+                        "x": 0.1532,
+                        "y": 0.0475
+                    },
+                    "green": {
+                        "x": 0.17,
+                        "y": 0.7
+                    },
+                    "red": {
+                        "x": 0.6915,
+                        "y": 0.3083
+                    }
+                },
+                "gamut_type": "C",
+                "xy": {
+                    "x": 0.4128,
+                    "y": 0.4235
+                }
+            },
+            "color_temperature": {
+                "mirek": null
+            },
+            "dimming": {
+                "brightness": 100.0
+            },
+            "dynamics": {},
+            "id": "7021ef5f-5128-446a-9767-786e07b1645e",
+            "id_v1": "/lights/11",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 11"
+            },
+            "mode": "normal",
+            "on": {
+                "on": true
+            },
+            "type": "light"
+        },
+		{
+            "color": {
+                "gamut": {
+                    "blue": {
+                        "x": 0.1532,
+                        "y": 0.0475
+                    },
+                    "green": {
+                        "x": 0.17,
+                        "y": 0.7
+                    },
+                    "red": {
+                        "x": 0.6915,
+                        "y": 0.3083
+                    }
+                },
+                "gamut_type": "C",
+                "xy": {
+                    "x": 0.4128,
+                    "y": 0.4235
+                }
+            },
+            "color_temperature": {
+                "mirek": null
+            },
+            "dimming": {
+                "brightness": 100.0
+            },
+            "dynamics": {},
+            "id": "e976728d-1276-464e-86ca-cc5136d86cdc",
+            "id_v1": "/lights/12",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 12"
+            },
+            "mode": "normal",
+            "on": {
+                "on": true
+            },
+            "type": "light"
+        },
+		{
+            "color": {
+                "gamut": {
+                    "blue": {
+                        "x": 0.1532,
+                        "y": 0.0475
+                    },
+                    "green": {
+                        "x": 0.17,
+                        "y": 0.7
+                    },
+                    "red": {
+                        "x": 0.6915,
+                        "y": 0.3083
+                    }
+                },
+                "gamut_type": "C",
+                "xy": {
+                    "x": 0.4128,
+                    "y": 0.4235
+                }
+            },
+            "color_temperature": {
+                "mirek": null
+            },
+            "dimming": {
+                "brightness": 100.0
+            },
+            "dynamics": {},
+            "id": "bda6482c-7e4c-4c24-9d4c-bb7334ad67b1",
+            "id_v1": "/lights/13",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 13"
+            },
+            "mode": "normal",
+            "on": {
+                "on": true
+            },
+            "type": "light"
+        },
+		{
+            "color": {
+                "gamut": {
+                    "blue": {
+                        "x": 0.1532,
+                        "y": 0.0475
+                    },
+                    "green": {
+                        "x": 0.17,
+                        "y": 0.7
+                    },
+                    "red": {
+                        "x": 0.6915,
+                        "y": 0.3083
+                    }
+                },
+                "gamut_type": "C",
+                "xy": {
+                    "x": 0.4128,
+                    "y": 0.4235
+                }
+            },
+            "color_temperature": {
+                "mirek": null
+            },
+            "dimming": {
+                "brightness": 100.0
+            },
+            "dynamics": {},
+            "id": "62b71cb1-d528-4e4f-9376-f9fe709a384d",
+            "id_v1": "/lights/14",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 14"
+            },
+            "mode": "normal",
+            "on": {
+                "on": true
+            },
+            "type": "light"
+        },
+		{
+            "color": {
+                "gamut": {
+                    "blue": {
+                        "x": 0.1532,
+                        "y": 0.0475
+                    },
+                    "green": {
+                        "x": 0.17,
+                        "y": 0.7
+                    },
+                    "red": {
+                        "x": 0.6915,
+                        "y": 0.3083
+                    }
+                },
+                "gamut_type": "C",
+                "xy": {
+                    "x": 0.4128,
+                    "y": 0.4235
+                }
+            },
+            "color_temperature": {
+                "mirek": null
+            },
+            "dimming": {
+                "brightness": 100.0
+            },
+            "dynamics": {},
+            "id": "8f54f015-15a5-4348-8558-66349d7c3c3f",
+            "id_v1": "/lights/15",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 15"
+            },
+            "mode": "normal",
+            "on": {
+                "on": true
+            },
+            "type": "light"
+        },
+		{
+            "color": {
+                "gamut": {
+                    "blue": {
+                        "x": 0.1532,
+                        "y": 0.0475
+                    },
+                    "green": {
+                        "x": 0.17,
+                        "y": 0.7
+                    },
+                    "red": {
+                        "x": 0.6915,
+                        "y": 0.3083
+                    }
+                },
+                "gamut_type": "C",
+                "xy": {
+                    "x": 0.4128,
+                    "y": 0.4235
+                }
+            },
+            "color_temperature": {
+                "mirek": null
+            },
+            "dimming": {
+                "brightness": 100.0
+            },
+            "dynamics": {},
+            "id": "e60b7ea4-c74b-4ffb-9897-a59087dc95a3",
+            "id_v1": "/lights/16",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 16"
+            },
+            "mode": "normal",
+            "on": {
+                "on": true
+            },
+            "type": "light"
+        },
+		{
+            "color": {
+                "gamut": {
+                    "blue": {
+                        "x": 0.1532,
+                        "y": 0.0475
+                    },
+                    "green": {
+                        "x": 0.17,
+                        "y": 0.7
+                    },
+                    "red": {
+                        "x": 0.6915,
+                        "y": 0.3083
+                    }
+                },
+                "gamut_type": "C",
+                "xy": {
+                    "x": 0.4128,
+                    "y": 0.4235
+                }
+            },
+            "color_temperature": {
+                "mirek": null
+            },
+            "dimming": {
+                "brightness": 100.0
+            },
+            "dynamics": {},
+            "id": "0a4be1f0-adf0-4ff7-b95a-dac87302ba15",
+            "id_v1": "/lights/17",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 17"
+            },
+            "mode": "normal",
+            "on": {
+                "on": true
+            },
+            "type": "light"
+        },
+		{
+            "color": {
+                "gamut": {
+                    "blue": {
+                        "x": 0.1532,
+                        "y": 0.0475
+                    },
+                    "green": {
+                        "x": 0.17,
+                        "y": 0.7
+                    },
+                    "red": {
+                        "x": 0.6915,
+                        "y": 0.3083
+                    }
+                },
+                "gamut_type": "C",
+                "xy": {
+                    "x": 0.4128,
+                    "y": 0.4235
+                }
+            },
+            "color_temperature": {
+                "mirek": null
+            },
+            "dimming": {
+                "brightness": 100.0
+            },
+            "dynamics": {},
+            "id": "dbcf4bf3-c1c2-44f1-9e01-35fab2f29850",
+            "id_v1": "/lights/18",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 18"
+            },
+            "mode": "normal",
+            "on": {
+                "on": true
+            },
+            "type": "light"
+        },
+		{
+            "color": {
+                "gamut": {
+                    "blue": {
+                        "x": 0.1532,
+                        "y": 0.0475
+                    },
+                    "green": {
+                        "x": 0.17,
+                        "y": 0.7
+                    },
+                    "red": {
+                        "x": 0.6915,
+                        "y": 0.3083
+                    }
+                },
+                "gamut_type": "C",
+                "xy": {
+                    "x": 0.4128,
+                    "y": 0.4235
+                }
+            },
+            "color_temperature": {
+                "mirek": null
+            },
+            "dimming": {
+                "brightness": 100.0
+            },
+            "dynamics": {},
+            "id": "406e71b4-9509-4364-b575-2a73c321b1bb",
+            "id_v1": "/lights/19",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 19"
+            },
+            "mode": "normal",
+            "on": {
+                "on": true
+            },
+            "type": "light"
+        },
+		{
+            "color": {
+                "gamut": {
+                    "blue": {
+                        "x": 0.1532,
+                        "y": 0.0475
+                    },
+                    "green": {
+                        "x": 0.17,
+                        "y": 0.7
+                    },
+                    "red": {
+                        "x": 0.6915,
+                        "y": 0.3083
+                    }
+                },
+                "gamut_type": "C",
+                "xy": {
+                    "x": 0.4128,
+                    "y": 0.4235
+                }
+            },
+            "color_temperature": {
+                "mirek": null
+            },
+            "dimming": {
+                "brightness": 100.0
+            },
+            "dynamics": {},
+            "id": "b86abbf9-8c11-4ac1-b2f7-f746fba52b3b",
+            "id_v1": "/lights/20",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 20"
+            },
+            "mode": "normal",
+            "on": {
+                "on": true
+            },
+            "type": "light"
+        },
+		{
+            "color": {
+                "gamut": {
+                    "blue": {
+                        "x": 0.1532,
+                        "y": 0.0475
+                    },
+                    "green": {
+                        "x": 0.17,
+                        "y": 0.7
+                    },
+                    "red": {
+                        "x": 0.6915,
+                        "y": 0.3083
+                    }
+                },
+                "gamut_type": "C",
+                "xy": {
+                    "x": 0.4128,
+                    "y": 0.4235
+                }
+            },
+            "color_temperature": {
+                "mirek": null
+            },
+            "dimming": {
+                "brightness": 100.0
+            },
+            "dynamics": {},
+            "id": "9983d909-0719-465b-b813-2f06c4fa943d",
+            "id_v1": "/lights/21",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 21"
+            },
+            "mode": "normal",
+            "on": {
+                "on": true
+            },
+            "type": "light"
+        },
+		{
+            "color": {
+                "gamut": {
+                    "blue": {
+                        "x": 0.1532,
+                        "y": 0.0475
+                    },
+                    "green": {
+                        "x": 0.17,
+                        "y": 0.7
+                    },
+                    "red": {
+                        "x": 0.6915,
+                        "y": 0.3083
+                    }
+                },
+                "gamut_type": "C",
+                "xy": {
+                    "x": 0.4128,
+                    "y": 0.4235
+                }
+            },
+            "color_temperature": {
+                "mirek": null
+            },
+            "dimming": {
+                "brightness": 100.0
+            },
+            "dynamics": {},
+            "id": "b7ea8adc-e3c1-4a83-930e-f95abcd587a8",
+            "id_v1": "/lights/22",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 22"
+            },
+            "mode": "normal",
+            "on": {
+                "on": true
+            },
+            "type": "light"
+        },
+		{
+            "color": {
+                "gamut": {
+                    "blue": {
+                        "x": 0.1532,
+                        "y": 0.0475
+                    },
+                    "green": {
+                        "x": 0.17,
+                        "y": 0.7
+                    },
+                    "red": {
+                        "x": 0.6915,
+                        "y": 0.3083
+                    }
+                },
+                "gamut_type": "C",
+                "xy": {
+                    "x": 0.4128,
+                    "y": 0.4235
+                }
+            },
+            "color_temperature": {
+                "mirek": null
+            },
+            "dimming": {
+                "brightness": 100.0
+            },
+            "dynamics": {},
+            "id": "7bc33b50-2d05-4dd2-a67c-44a8f02fe72a",
+            "id_v1": "/lights/23",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 23"
+            },
+            "mode": "normal",
+            "on": {
+                "on": true
+            },
+            "type": "light"
+        },
+		{
+            "color": {
+                "gamut": {
+                    "blue": {
+                        "x": 0.1532,
+                        "y": 0.0475
+                    },
+                    "green": {
+                        "x": 0.17,
+                        "y": 0.7
+                    },
+                    "red": {
+                        "x": 0.6915,
+                        "y": 0.3083
+                    }
+                },
+                "gamut_type": "C",
+                "xy": {
+                    "x": 0.4128,
+                    "y": 0.4235
+                }
+            },
+            "color_temperature": {
+                "mirek": null
+            },
+            "dimming": {
+                "brightness": 100.0
+            },
+            "dynamics": {},
+            "id": "ef313961-c84a-404a-b817-c879ae4d7612",
+            "id_v1": "/lights/24",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 24"
+            },
+            "mode": "normal",
+            "on": {
+                "on": true
+            },
+            "type": "light"
+        },
+		{
+            "color": {
+                "gamut": {
+                    "blue": {
+                        "x": 0.1532,
+                        "y": 0.0475
+                    },
+                    "green": {
+                        "x": 0.17,
+                        "y": 0.7
+                    },
+                    "red": {
+                        "x": 0.6915,
+                        "y": 0.3083
+                    }
+                },
+                "gamut_type": "C",
+                "xy": {
+                    "x": 0.4128,
+                    "y": 0.4235
+                }
+            },
+            "color_temperature": {
+                "mirek": null
+            },
+            "dimming": {
+                "brightness": 100.0
+            },
+            "dynamics": {},
+            "id": "4438e17c-9806-4e61-b26c-7e661d88daca",
+            "id_v1": "/lights/25",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 25"
+            },
+            "mode": "normal",
+            "on": {
+                "on": true
+            },
+            "type": "light"
+        }
+    ]
+}

@@ -1,0 +1,811 @@
+{
+    "errors": [],
+    "data": [        
+        {
+            "id": "cae85ff1-dede-471e-b52e-35a1e7c63282",
+            "id_v1": "/lights/1",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 1"
+            },
+            "product_data": {
+                "certified": true,
+                "manufacturer_name": "Signify Netherlands B.V.",
+                "model_id": "LLC020",
+                "product_archetype": "hue_go",
+                "product_name": "Hue go",
+                "software_version": "130.1.30000"
+            },
+            "services": [
+                {
+                    "rid": "c2faaefc-1b72-4261-b5ae-bf03e1ba823a",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "edfabb6d-ee06-47cb-9d48-c1eb7b43cafb",
+                    "rtype": "zigbee_connectivity"
+                },
+                {
+                    "rid": "4cdbfb76-62a5-40aa-b559-e4323dbdd8b7",
+                    "rtype": "entertainment"
+                }
+            ],
+            "type": "device"
+        },
+        {
+            "id": "0ae4c7ee-7e31-4950-9c5a-6dd7d9ddea14",
+            "id_v1": "/lights/2",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 2"
+            },
+            "product_data": {
+                "certified": true,
+                "manufacturer_name": "Signify Netherlands B.V.",
+                "model_id": "LLC020",
+                "product_archetype": "hue_go",
+                "product_name": "Hue go",
+                "software_version": "130.1.30000"
+            },
+            "services": [
+                {
+                    "rid": "fabe69f4-66d6-4582-8627-683ab37314bf",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "c572f4cc-1f84-4b2d-8c3f-bdee2c870a97",
+                    "rtype": "zigbee_connectivity"
+                },
+                {
+                    "rid": "ec1e76bf-6b95-4466-b7c3-2a1e88045f44",
+                    "rtype": "entertainment"
+                }
+            ],
+            "type": "device"
+        },
+        {
+            "id": "32ba0bd4-7366-4361-82e9-0ff07ff48eea",
+            "id_v1": "/lights/3",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 3"
+            },
+            "product_data": {
+                "certified": true,
+                "manufacturer_name": "Signify Netherlands B.V.",
+                "model_id": "LLC020",
+                "product_archetype": "hue_go",
+                "product_name": "Hue go",
+                "software_version": "130.1.30000"
+            },
+            "services": [
+                {
+                    "rid": "b0b1ecf5-5e75-4951-bbfd-0b7dc7885cc3",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "240ca421-d367-4e83-8b87-94ccb65f579c",
+                    "rtype": "zigbee_connectivity"
+                },
+                {
+                    "rid": "7bcaad68-c75e-403f-a184-f1c40dfce12d",
+                    "rtype": "entertainment"
+                }
+            ],
+            "type": "device"
+        },
+        {
+            "id": "b8a0105a-5485-434a-8fc5-c8c026676df5",
+            "id_v1": "/lights/4",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 4"
+            },
+            "product_data": {
+                "certified": true,
+                "manufacturer_name": "Signify Netherlands B.V.",
+                "model_id": "LLC020",
+                "product_archetype": "hue_go",
+                "product_name": "Hue go",
+                "software_version": "130.1.30000"
+            },
+            "services": [
+                {
+                    "rid": "aff56aca-6c8c-463e-8590-135ac5799376",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "6fa31eac-f51c-45ec-9a6c-9b8828711d33",
+                    "rtype": "zigbee_connectivity"
+                },
+                {
+                    "rid": "3503b48d-5d0f-4fa3-a21b-3bffa19a1bdd",
+                    "rtype": "entertainment"
+                }
+            ],
+            "type": "device"
+        },
+        {
+            "id": "bff36467-1f76-4231-be96-50befc55b27d",
+            "id_v1": "/lights/5",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 5"
+            },
+            "product_data": {
+                "certified": true,
+                "manufacturer_name": "Signify Netherlands B.V.",
+                "model_id": "LLC020",
+                "product_archetype": "hue_go",
+                "product_name": "Hue go",
+                "software_version": "130.1.30000"
+            },
+            "services": [
+                {
+                    "rid": "41617405-853b-439b-a5ee-4b2ac6b87948",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "2bc2b1c6-d1c5-42c0-ab31-abf923ca1d45",
+                    "rtype": "zigbee_connectivity"
+                },
+                {
+                    "rid": "f99d1a33-4c7f-4983-adb2-78ba2338fddc",
+                    "rtype": "entertainment"
+                }
+            ],
+            "type": "device"
+        },
+        {
+            "id": "fe2b5481-7d93-452c-9325-880851fda4c1",
+            "id_v1": "/lights/6",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 6"
+            },
+            "product_data": {
+                "certified": true,
+                "manufacturer_name": "Signify Netherlands B.V.",
+                "model_id": "LLC020",
+                "product_archetype": "hue_go",
+                "product_name": "Hue go",
+                "software_version": "130.1.30000"
+            },
+            "services": [
+                {
+                    "rid": "b7ab4b34-3f3c-4c77-9153-40d12630c1f0",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "c01b0ecf-7fc5-4c6a-862f-c35986404b07",
+                    "rtype": "zigbee_connectivity"
+                },
+                {
+                    "rid": "b3854f92-385d-4670-a54b-2bf543fc0f73",
+                    "rtype": "entertainment"
+                }
+            ],
+            "type": "device"
+        },
+        {
+            "id": "256c266b-7245-42f8-b5dc-551177e1f6b4",
+            "id_v1": "/lights/7",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 7"
+            },
+            "product_data": {
+                "certified": true,
+                "manufacturer_name": "Signify Netherlands B.V.",
+                "model_id": "LLC020",
+                "product_archetype": "hue_go",
+                "product_name": "Hue go",
+                "software_version": "130.1.30000"
+            },
+            "services": [
+                {
+                    "rid": "500cabfe-7e3e-4414-9a5a-95bcb343c5fa",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "b832719c-4809-489b-b0dd-a2f9ef66e3e4",
+                    "rtype": "zigbee_connectivity"
+                },
+                {
+                    "rid": "0b341766-f553-4fb2-acc1-b763d3a90437",
+                    "rtype": "entertainment"
+                }
+            ],
+            "type": "device"
+        },
+        {
+            "id": "0435bb86-9d22-4dcd-9a09-a289b74626c0",
+            "id_v1": "/lights/8",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 8"
+            },
+            "product_data": {
+                "certified": true,
+                "manufacturer_name": "Signify Netherlands B.V.",
+                "model_id": "LLC020",
+                "product_archetype": "hue_go",
+                "product_name": "Hue go",
+                "software_version": "130.1.30000"
+            },
+            "services": [
+                {
+                    "rid": "eabac753-2695-401d-947b-5e05ebe71d57",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "4cd96d37-6163-4243-a9e8-821a893b1160",
+                    "rtype": "zigbee_connectivity"
+                },
+                {
+                    "rid": "3f8b1feb-af4f-4f48-9399-35e7aebb56d0",
+                    "rtype": "entertainment"
+                }
+            ],
+            "type": "device"
+        },
+        {
+            "id": "a4c9fe91-912e-4be9-9cbb-9d497b6c0ed5",
+            "id_v1": "/lights/9",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 9"
+            },
+            "product_data": {
+                "certified": true,
+                "manufacturer_name": "Signify Netherlands B.V.",
+                "model_id": "LLC020",
+                "product_archetype": "hue_go",
+                "product_name": "Hue go",
+                "software_version": "130.1.30000"
+            },
+            "services": [
+                {
+                    "rid": "be9e9c90-b29c-4dfb-a1cb-1c083cf5fd46",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "3a03f620-19ad-4c75-b861-e0d0d40d5efd",
+                    "rtype": "zigbee_connectivity"
+                },
+                {
+                    "rid": "2316d8dd-ab6a-4790-9ca9-2f0950d799a5",
+                    "rtype": "entertainment"
+                }
+            ],
+            "type": "device"
+        },
+        {
+            "id": "b5f9ffd5-10ce-4b27-a70d-0f650e73d48e",
+            "id_v1": "/lights/10",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 10"
+            },
+            "product_data": {
+                "certified": true,
+                "manufacturer_name": "Signify Netherlands B.V.",
+                "model_id": "LLC020",
+                "product_archetype": "hue_go",
+                "product_name": "Hue go",
+                "software_version": "130.1.30000"
+            },
+            "services": [
+                {
+                    "rid": "15d05868-09a9-40e4-8dec-740dfebf1659",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "48784c3d-7912-4275-9f71-d6658af7b2a3",
+                    "rtype": "zigbee_connectivity"
+                },
+                {
+                    "rid": "a350e06e-5f37-411f-a602-efa777398fb4",
+                    "rtype": "entertainment"
+                }
+            ],
+            "type": "device"
+        },
+        {
+            "id": "ed92e321-7ea2-41b2-a58b-1668c4028b4c",
+            "id_v1": "/lights/11",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 11"
+            },
+            "product_data": {
+                "certified": true,
+                "manufacturer_name": "Signify Netherlands B.V.",
+                "model_id": "LLC020",
+                "product_archetype": "hue_go",
+                "product_name": "Hue go",
+                "software_version": "130.1.30000"
+            },
+            "services": [
+                {
+                    "rid": "7021ef5f-5128-446a-9767-786e07b1645e",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "8da71d05-3d2c-47a7-9e72-c70cf49b3e23",
+                    "rtype": "zigbee_connectivity"
+                },
+                {
+                    "rid": "a7bc1189-82ca-4ebc-ac4c-f93f56755d59",
+                    "rtype": "entertainment"
+                }
+            ],
+            "type": "device"
+        },
+        {
+            "id": "ff5f5eac-c7a7-4022-be34-035ff0ad48be",
+            "id_v1": "/lights/12",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 12"
+            },
+            "product_data": {
+                "certified": true,
+                "manufacturer_name": "Signify Netherlands B.V.",
+                "model_id": "LLC020",
+                "product_archetype": "hue_go",
+                "product_name": "Hue go",
+                "software_version": "130.1.30000"
+            },
+            "services": [
+                {
+                    "rid": "e976728d-1276-464e-86ca-cc5136d86cdc",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "89dd33e9-1db0-4f49-b496-b628f7d92123",
+                    "rtype": "zigbee_connectivity"
+                },
+                {
+                    "rid": "36cfa41b-db9b-46d8-ba70-386baae9bb10",
+                    "rtype": "entertainment"
+                }
+            ],
+            "type": "device"
+        },
+        {
+            "id": "06729861-4159-41b8-8c0e-f3fd43a66f37",
+            "id_v1": "/lights/13",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 13"
+            },
+            "product_data": {
+                "certified": true,
+                "manufacturer_name": "Signify Netherlands B.V.",
+                "model_id": "LLC020",
+                "product_archetype": "hue_go",
+                "product_name": "Hue go",
+                "software_version": "130.1.30000"
+            },
+            "services": [
+                {
+                    "rid": "bda6482c-7e4c-4c24-9d4c-bb7334ad67b1",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "6e834d44-3094-4054-95a6-4aa0049efc4f",
+                    "rtype": "zigbee_connectivity"
+                },
+                {
+                    "rid": "61e0c130-2145-4851-917c-0c262ca80f5d",
+                    "rtype": "entertainment"
+                }
+            ],
+            "type": "device"
+        },
+        {
+            "id": "c1fd0b0a-58cd-4b11-a7bf-088207e450b8",
+            "id_v1": "/lights/14",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 14"
+            },
+            "product_data": {
+                "certified": true,
+                "manufacturer_name": "Signify Netherlands B.V.",
+                "model_id": "LLC020",
+                "product_archetype": "hue_go",
+                "product_name": "Hue go",
+                "software_version": "130.1.30000"
+            },
+            "services": [
+                {
+                    "rid": "62b71cb1-d528-4e4f-9376-f9fe709a384d",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "f32f1709-55d5-497a-bcce-881ea7534e53",
+                    "rtype": "zigbee_connectivity"
+                },
+                {
+                    "rid": "222eec40-deb8-4055-b247-055b1d8c05eb",
+                    "rtype": "entertainment"
+                }
+            ],
+            "type": "device"
+        },
+        {
+            "id": "6fae0434-46a1-44b1-8e42-b84c5b1a548f",
+            "id_v1": "/lights/15",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 15"
+            },
+            "product_data": {
+                "certified": true,
+                "manufacturer_name": "Signify Netherlands B.V.",
+                "model_id": "LLC020",
+                "product_archetype": "hue_go",
+                "product_name": "Hue go",
+                "software_version": "130.1.30000"
+            },
+            "services": [
+                {
+                    "rid": "8f54f015-15a5-4348-8558-66349d7c3c3f",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "7613da76-2856-4566-95dd-d31a27e42f9b",
+                    "rtype": "zigbee_connectivity"
+                },
+                {
+                    "rid": "f9500c5c-19a5-4fe5-8003-8e22963a09e0",
+                    "rtype": "entertainment"
+                }
+            ],
+            "type": "device"
+        },
+        {
+            "id": "989e446e-96d6-4965-897c-7ae14bd59b52",
+            "id_v1": "/lights/16",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 16"
+            },
+            "product_data": {
+                "certified": true,
+                "manufacturer_name": "Signify Netherlands B.V.",
+                "model_id": "LLC020",
+                "product_archetype": "hue_go",
+                "product_name": "Hue go",
+                "software_version": "130.1.30000"
+            },
+            "services": [
+                {
+                    "rid": "e60b7ea4-c74b-4ffb-9897-a59087dc95a3",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "6f32cd5b-2ffb-479d-a323-178d89814814",
+                    "rtype": "zigbee_connectivity"
+                },
+                {
+                    "rid": "4dcb46ac-7536-4dce-8bf0-a1ae1b76e751",
+                    "rtype": "entertainment"
+                }
+            ],
+            "type": "device"
+        },
+        {
+            "id": "d24cd384-0fa4-4937-a2ce-11a1bf00fa15",
+            "id_v1": "/lights/17",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 17"
+            },
+            "product_data": {
+                "certified": true,
+                "manufacturer_name": "Signify Netherlands B.V.",
+                "model_id": "LLC020",
+                "product_archetype": "hue_go",
+                "product_name": "Hue go",
+                "software_version": "130.1.30000"
+            },
+            "services": [
+                {
+                    "rid": "0a4be1f0-adf0-4ff7-b95a-dac87302ba15",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "63c4d2d7-26b0-4961-9230-2520f7003599",
+                    "rtype": "zigbee_connectivity"
+                },
+                {
+                    "rid": "6b1246a1-d5d4-4106-ae93-4a93af158212",
+                    "rtype": "entertainment"
+                }
+            ],
+            "type": "device"
+        },
+        {
+            "id": "86ad3881-b36f-49ac-b113-c039ba498663",
+            "id_v1": "/lights/18",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 18"
+            },
+            "product_data": {
+                "certified": true,
+                "manufacturer_name": "Signify Netherlands B.V.",
+                "model_id": "LLC020",
+                "product_archetype": "hue_go",
+                "product_name": "Hue go",
+                "software_version": "130.1.30000"
+            },
+            "services": [
+                {
+                    "rid": "dbcf4bf3-c1c2-44f1-9e01-35fab2f29850",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "dc53ab97-bc7c-48f8-b8d0-5f223189c6bd",
+                    "rtype": "zigbee_connectivity"
+                },
+                {
+                    "rid": "37cc4a43-d3eb-4d3a-ad4a-7aa639400799",
+                    "rtype": "entertainment"
+                }
+            ],
+            "type": "device"
+        },
+        {
+            "id": "9603aca5-3c1d-4fec-bc93-594bc0ee09e3",
+            "id_v1": "/lights/19",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 19"
+            },
+            "product_data": {
+                "certified": true,
+                "manufacturer_name": "Signify Netherlands B.V.",
+                "model_id": "LLC020",
+                "product_archetype": "hue_go",
+                "product_name": "Hue go",
+                "software_version": "130.1.30000"
+            },
+            "services": [
+                {
+                    "rid": "406e71b4-9509-4364-b575-2a73c321b1bb",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "c8d05266-ee20-4655-bdb1-32b2a2cb8d9d",
+                    "rtype": "zigbee_connectivity"
+                },
+                {
+                    "rid": "6d3c4d1e-599a-47ec-985b-3d6d10221409",
+                    "rtype": "entertainment"
+                }
+            ],
+            "type": "device"
+        },
+        {
+            "id": "2e8a8dfd-5cd5-48ea-a4a0-078bd1f03e14",
+            "id_v1": "/lights/20",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 20"
+            },
+            "product_data": {
+                "certified": true,
+                "manufacturer_name": "Signify Netherlands B.V.",
+                "model_id": "LLC020",
+                "product_archetype": "hue_go",
+                "product_name": "Hue go",
+                "software_version": "130.1.30000"
+            },
+            "services": [
+                {
+                    "rid": "b86abbf9-8c11-4ac1-b2f7-f746fba52b3b",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "bef1d79b-a783-4573-8541-9f48389f31c7",
+                    "rtype": "zigbee_connectivity"
+                },
+                {
+                    "rid": "9077ca4d-a413-47cd-a1e4-492ed73823fb",
+                    "rtype": "entertainment"
+                }
+            ],
+            "type": "device"
+        },
+        {
+            "id": "e162c972-347d-4600-b7ff-409b64759b8b",
+            "id_v1": "/lights/21",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 21"
+            },
+            "product_data": {
+                "certified": true,
+                "manufacturer_name": "Signify Netherlands B.V.",
+                "model_id": "LLC020",
+                "product_archetype": "hue_go",
+                "product_name": "Hue go",
+                "software_version": "130.1.30000"
+            },
+            "services": [
+                {
+                    "rid": "9983d909-0719-465b-b813-2f06c4fa943d",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "d0437c4a-5439-4d0a-a9fb-101e4cc49ba6",
+                    "rtype": "zigbee_connectivity"
+                },
+                {
+                    "rid": "4d33e591-d557-47b6-aaf5-2469ddc45c6f",
+                    "rtype": "entertainment"
+                }
+            ],
+            "type": "device"
+        },
+        {
+            "id": "aecb3f2e-e35f-4a0d-a89e-0a7db22f593a",
+            "id_v1": "/lights/22",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 22"
+            },
+            "product_data": {
+                "certified": true,
+                "manufacturer_name": "Signify Netherlands B.V.",
+                "model_id": "LLC020",
+                "product_archetype": "hue_go",
+                "product_name": "Hue go",
+                "software_version": "130.1.30000"
+            },
+            "services": [
+                {
+                    "rid": "b7ea8adc-e3c1-4a83-930e-f95abcd587a8",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "3597afa5-d753-49cd-9554-8109617dce39",
+                    "rtype": "zigbee_connectivity"
+                },
+                {
+                    "rid": "7fa069ba-1336-4ded-baec-08ae84851df8",
+                    "rtype": "entertainment"
+                }
+            ],
+            "type": "device"
+        },
+        {
+            "id": "bd00206d-bf50-4faf-a801-64e4b9c83e72",
+            "id_v1": "/lights/23",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 23"
+            },
+            "product_data": {
+                "certified": true,
+                "manufacturer_name": "Signify Netherlands B.V.",
+                "model_id": "LLC020",
+                "product_archetype": "hue_go",
+                "product_name": "Hue go",
+                "software_version": "130.1.30000"
+            },
+            "services": [
+                {
+                    "rid": "7bc33b50-2d05-4dd2-a67c-44a8f02fe72a",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "fb15f034-c0ab-4aaf-a028-e76315e7ea50",
+                    "rtype": "zigbee_connectivity"
+                },
+                {
+                    "rid": "1f60107c-d64c-4064-a9ee-4e75ccb79987",
+                    "rtype": "entertainment"
+                }
+            ],
+            "type": "device"
+        },
+        {
+            "id": "42eecbbc-b7b3-4dd1-87b4-3816f89e24c5",
+            "id_v1": "/lights/24",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 24"
+            },
+            "product_data": {
+                "certified": true,
+                "manufacturer_name": "Signify Netherlands B.V.",
+                "model_id": "LLC020",
+                "product_archetype": "hue_go",
+                "product_name": "Hue go",
+                "software_version": "130.1.30000"
+            },
+            "services": [
+                {
+                    "rid": "ef313961-c84a-404a-b817-c879ae4d7612",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "b4131450-feec-4f73-8541-49ad4322c45a",
+                    "rtype": "zigbee_connectivity"
+                },
+                {
+                    "rid": "49c182dc-d2c2-4bf1-ae30-de75e380e494",
+                    "rtype": "entertainment"
+                }
+            ],
+            "type": "device"
+        },
+        {
+            "id": "a7d4fc59-47c6-456d-be3b-2e6c3baff362",
+            "id_v1": "/lights/25",
+            "metadata": {
+                "archetype": "hue_go",
+                "name": "Hue go 25"
+            },
+            "product_data": {
+                "certified": true,
+                "manufacturer_name": "Signify Netherlands B.V.",
+                "model_id": "LLC020",
+                "product_archetype": "hue_go",
+                "product_name": "Hue go",
+                "software_version": "130.1.30000"
+            },
+            "services": [
+                {
+                    "rid": "4438e17c-9806-4e61-b26c-7e661d88daca",
+                    "rtype": "light"
+                },
+                {
+                    "rid": "3758bf05-a82b-40a6-8ad6-56037804e888",
+                    "rtype": "zigbee_connectivity"
+                },
+                {
+                    "rid": "eb56fdd5-18a4-4e84-9692-23964f086654",
+                    "rtype": "entertainment"
+                }
+            ],
+            "type": "device"
+        },
+		{
+            "id": "9fecb15a-71c3-477d-8755-86b6beed8c09",
+            "id_v1": "",
+            "metadata": {
+                "archetype": "bridge_v2",
+                "name": "Philips hue Simulator"
+            },
+            "product_data": {
+                "certified": true,
+                "manufacturer_name": "Signify Netherlands B.V.",
+                "model_id": "BSB002",
+                "product_archetype": "bridge_v2",
+                "product_name": "Philips hue",
+                "software_version": "1.43.1943185020"
+            },
+            "services": [
+                {
+                    "rid": "1ebcd780-4eaa-40d9-948d-216734bce8a6",
+                    "rtype": "bridge"
+                },
+                {
+                    "rid": "145476b5-331a-48af-8f4a-2997148e3388",
+                    "rtype": "zigbee_connectivity"
+                },
+                {
+                    "rid": "415ed4d1-cf04-497f-a45b-c65ad0059626",
+                    "rtype": "entertainment"
+                }
+            ],
+            "type": "device"
+        }
+    ]
+}

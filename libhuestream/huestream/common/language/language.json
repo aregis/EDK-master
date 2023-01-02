@@ -1,0 +1,211 @@
+{
+    "en": {
+        "ID_PRESS_PUSH_LINK":        " found. Press the push-link button on the Hue bridge.",
+        "ID_SELECT_GROUP":           "Select an entertainment area to use.",
+        "ID_NO_BRIDGE_FOUND":        "No Hue bridge was found. Make sure your Hue bridge is connected to your home Wi-Fi network or enter the IP address manually.",
+        "ID_BRIDGE_NOT_FOUND":       "We couldn't connect to your Hue bridge. Make sure your Hue bridge is connected to your home Wi-Fi network or search for another Hue bridge.",
+        "ID_INVALID_MODEL":          "The entertainment feature is not available on the round shaped Hue bridge. Please use the square shaped Hue bridge.",
+        "ID_INVALID_VERSION":        "Your Hue bridge software is out of date. Go to Settings in the Hue app to update your Hue bridge.",
+        "ID_NO_GROUP_AVAILABLE":     "Your Hue bridge is not yet set up for entertainment. To continue, go to settings in the Hue app to create an entertainment area.",
+        "ID_BRIDGE_BUSY":            "Your Hue bridge is already active in another entertainment session: ",
+        "ID_STREAMING_DISCONNECTED": "Entertainment session stopped."
+    },
+    "fr": {
+        "ID_PRESS_PUSH_LINK":        " trouvés. Appuyez sur le bouton Push-Link du Hue Bridge.",
+        "ID_SELECT_GROUP":           "Sélectionnez une configuration Loisirs à utiliser.",
+        "ID_NO_BRIDGE_FOUND":        "Aucun Hue Bridge détecté.Vérifiez que votre Hue Bridge est connecté à votre réseau Wi-Fi domestique ou saisissez manuellement l’adresse IP.",
+        "ID_BRIDGE_NOT_FOUND":       "Impossible de se connecter à votre Hue Bridge. Vérifiez qu’il est connecté à votre réseau Wi-Fi domestique ou recherchez-en un autre.",
+        "ID_INVALID_MODEL":          "La fonction Loisirs est indisponible sur la version ronde du Hue Bridge. Veuillez utiliser un Hue Bridge de forme carrée.",
+        "ID_INVALID_VERSION":        "Le logiciel de votre Hue Bridge est obsolète.Allez dans l’option Paramètres de l’application Hue pour mettre à jour votre Hue Bridge.",
+        "ID_NO_GROUP_AVAILABLE":     "Votre Hue Bridge n’est pas encore configuré pour la fonction Loisirs. Pour poursuivre, allez dans les paramètres de l’application Hue pour créer une configuration Loisirs.",
+        "ID_BRIDGE_BUSY":            "Votre Hue Bridge est déjà utilisé dans une autre session Loisirs: ",
+        "ID_STREAMING_DISCONNECTED": "Session Loisirs arrêté."
+    },
+    "de": {
+        "ID_PRESS_PUSH_LINK":        " gefunden. Drücken Sie die Push-Link-Taste der Hue Bridge.",
+        "ID_SELECT_GROUP":           "Wählen Sie ein zu verwendendes Entertainment-Bereich.",
+        "ID_NO_BRIDGE_FOUND":        "Es wurde keine Hue Bridge gefunden. Vergewissern Sie sich, dass Ihre Hue Bridge mit Ihrem WLAN-Heimnetz verbunden ist oder geben Sie die IP-Adresse manuell ein.",
+        "ID_BRIDGE_NOT_FOUND":       "Wir konnten keine Verbindung zu Ihrer Hue Bridge herstellen. Vergewissern Sie sich, dass Ihre Hue Bridge mit Ihrem WLAN-Heimnetz verbunden ist oder suchen Sie nach einer anderen Hue Bridge.",
+        "ID_INVALID_MODEL":          "Die Entertainment-Funktion steht bei der runden Hue Bridge nicht zur Verfügung. Bitte verwenden Sie die rechteckige Hue Bridge.",
+        "ID_INVALID_VERSION":        "Die Software Ihrer Hue Bridge ist veraltet. Gehen Sie auf Einstellungen in der Hue App, um Ihre Hue Bridge zu aktualisieren.",
+        "ID_NO_GROUP_AVAILABLE":     "Ihre Hue Bridge noch nicht für Entertainment eingerichtet. Um fortzufahren, gehen Sie zu den Einstellungen in der Hue App und erstellen Sie ein Entertainment-Bereich.",
+        "ID_BRIDGE_BUSY":            "Ihre Hue Bridge ist bereits in einer anderen Entertainment-Sitzung aktiv: ",
+        "ID_STREAMING_DISCONNECTED": "Entertainment-Sitzung gestoppt."
+    },
+    "nl": {
+        "ID_PRESS_PUSH_LINK":        " gevonden. Druk op de link knop van je Hue Bridge.",
+        "ID_SELECT_GROUP":           "Kies een Entertainment gebied om te gebruiken.",
+        "ID_NO_BRIDGE_FOUND":        "Geen Hue Bridge gevonden. Controleer of je Hue Bridge verbonden is met je huis Wi-Fi netwerk of voer het IP adres handmatig in.",
+        "ID_BRIDGE_NOT_FOUND":       "We kunnen niet me je Hue Bridge verbinden. Controleer of je hue Bridge verbonden is met je huis Wi-Fi netwerk of zoek naar een andere Hue Bridge.",
+        "ID_INVALID_MODEL":          "De entertainment functionaliteit is niet beschikbaar op de ronde Hue Bridge. Gebruik de vierkante Hue Bridge.",
+        "ID_INVALID_VERSION":        "Je Hue Bridge software is verouderd. Ga naar instellinen in de Hue app om je Hue Bridge te updaten.",
+        "ID_NO_GROUP_AVAILABLE":     "Je Hue Bridge is nog niet opgezet voor Entertainment. Om verder te gaan, ga naar instellingen in de Hue app om een Entertainment gebied aan te maken.",
+        "ID_BRIDGE_BUSY":            "Je Hue Bridge is al actief in een andere entertainment sessie: ",
+        "ID_STREAMING_DISCONNECTED": "Entertainment sessie gestopt."
+    },
+    "it": {
+        "ID_PRESS_PUSH_LINK":        " trovato. Premi il pulsante Push-Link sul dispositivo Hue bridge.",
+        "ID_SELECT_GROUP":           "Seleziona una configurazione Intrattenimento da utilizzare.",
+        "ID_NO_BRIDGE_FOUND":        "Nessun Hue bridge trovato. Assicurati che il tuo Hue bridge sia connesso alla tua rete Wi-Fi domestica o inserisci l'indirizzo IP manualmente.",
+        "ID_BRIDGE_NOT_FOUND":       "Impossibile connetterci al tuo Hue bridge. Assicurati che il tuo Hue bridge sia connesso alla tua rete Wi-Fi domestica o cerca un altro Hue bridge.",
+        "ID_INVALID_MODEL":          "La funzionalità Intrattenimento non è disponibile sul dispositivo Hue bridge di forma rotonda. Utilizza il dispositivo Hue bridge di forma quadrata.",
+        "ID_INVALID_VERSION":        "Il software del tuo Hue bridge non è aggiornato. Vai a Impostazioni nell'app Hue per aggiornare il tuo Hue bridge.",
+        "ID_NO_GROUP_AVAILABLE":     "Il tuo Hue bridge non è ancora configurato per la funzionalità Intrattenimento. Per continuare, vai a impostazione nell'app Hue e crea una configurazione Intrattenimento.",
+        "ID_BRIDGE_BUSY":            "Il tuo Hue bridge è già attivo in un'altra sessione di Intrattenimento: ",
+        "ID_STREAMING_DISCONNECTED": "Sessione di Intrattenimento fermato."
+    },
+    "es-ES": {
+        "ID_PRESS_PUSH_LINK":        " encontrado. Pulsa el botón push-link del Hue Bridge.",
+        "ID_SELECT_GROUP":           "Selecciona la configuración de Ocio que desees utilizar.",
+        "ID_NO_BRIDGE_FOUND":        "No se ha encontrado ningún Hue Bridge. Asegúrate de que el Hue Bridge esté conectado a la red Wi-Fi doméstica o introduce manualmente la dirección IP.",
+        "ID_BRIDGE_NOT_FOUND":       "No podemos conectar el Hue Bridge. Asegúrate de que el Hue Bridge esté conectado a la red Wi-Fi doméstica o busca otro Hue Bridge.",
+        "ID_INVALID_MODEL":          "La función de Ocio no está disponible en el Hue Bridge redondo. Utiliza el Hue Bridge cuadrado.",
+        "ID_INVALID_VERSION":        "El software del Hue Bridge está desactualizado. Ve a Configuración en la aplicación Hue para actualizar el Hue Bridge.",
+        "ID_NO_GROUP_AVAILABLE":     "El Hue Bridge no está configurado aún para el Ocio. Para continuar, vaya a configuración en la aplicación Hue para crear una configuración de Ocio.",
+        "ID_BRIDGE_BUSY":            "Su Hue Bridge ya está activo en otra sesión de Ocio: ",
+        "ID_STREAMING_DISCONNECTED": "Sesión de Ocio parado."
+    },
+    "pt-PT": {
+        "ID_PRESS_PUSH_LINK":        " encontrado. Pressione o botão push-link na Hue bridge.",
+        "ID_SELECT_GROUP":           "Selecione uma configuração de Entretenimento a utilizar.",
+        "ID_NO_BRIDGE_FOUND":        "Nenhuma Hue bridge foi encontrada. Verifique se a Hue bridge está conectada à sua rede Wi-Fi doméstica ou insira o endereço IP manualmente.",
+        "ID_BRIDGE_NOT_FOUND":       "Não foi possível conectar à sua Hue bridge. Verifique se ela está conectada à sua rede Wi-Fi doméstica ou procure outra Hue bridge.",
+        "ID_INVALID_MODEL":          "O recurso Entretenimento não está disponível na Hue bridge de formato redondo. Use a Hue bridge de formato quadrado.",
+        "ID_INVALID_VERSION":        "O software da sua Hue bridge está desatualizado. Aceda a Configurações na aplicação Hue para atualizar a sua Hue bridge.",
+        "ID_NO_GROUP_AVAILABLE":     "Sua Hue bridge ainda não está configurada para Entretenimento. Para continuar, aceda às configurações na aplicação Hue para definir uma configuração para Entretenimento.",
+        "ID_BRIDGE_BUSY":            "Sua Hue bridge já está ativa em outra sessão de Entretenimento: ",
+        "ID_STREAMING_DISCONNECTED": "Sessão de Entretenimento parado."
+    },
+    "cs": {
+        "ID_PRESS_PUSH_LINK":        " nalezeno. Stiskněte tlačítko na Hue bridge.",
+        "ID_SELECT_GROUP":           "Vyberte nastavení Zábava, které má být použito.",
+        "ID_NO_BRIDGE_FOUND":        "Nebyl nalezen žádný Hue bridge. Ujistěte se, že je Hue bridge připojen k vaší domácí síti Wi-FI, případně zadejte jeho adresu IP ručně.",
+        "ID_BRIDGE_NOT_FOUND":       "Nepodařilo se nám připojit k vašemu Hue bridge. Ujistěte se, že je Hue bridge připojen k vaší domácí síti Wi-FI, případně vyhledejte jiný Hue bridge.",
+        "ID_INVALID_MODEL":          "Funkce Zábava není k dispozici na kulatém Hue bridge. Použijte hranatý Hue bridge.",
+        "ID_INVALID_VERSION":        "Software Hue bridge není aktuální. Přejděte do nastavení v aplikaci Hue a aktualizujte svůj Hue bridge.",
+        "ID_NO_GROUP_AVAILABLE":     "Váš Hue bridge ještě není nastaven pro funkci Zábava. Chcete-li pokračovat, v nastavení v aplikaci Hue vytvořte nastavení Zábava.",
+        "ID_BRIDGE_BUSY":            "Váš Hue bridge je již aktivní v jiné relaci Zábava: ",
+        "ID_STREAMING_DISCONNECTED": "Zábava se zastavila."
+    },
+    "zh-CN": {
+        "ID_PRESS_PUSH_LINK":        " 发现. 按下 Hue bridge 上的“Push-Link”（推送-链接）按钮。",
+        "ID_SELECT_GROUP":           "选择要使用的“娱乐”设置。",
+        "ID_NO_BRIDGE_FOUND":        "未找到 Hue bridge。请确保 Hue bridge 已连接至您的家庭 Wi-Fi 网络，或者手动输入 IP 地址。",
+        "ID_BRIDGE_NOT_FOUND":       "无法连接至您的 Hue bridge。请确保 Hue bridge 已连接至您的家庭 Wi-Fi 网络，或者搜索另一个 Hue bridge。",
+        "ID_INVALID_MODEL":          "圆形 Hue bridge 不提供娱乐功能。请使用方形 Hue bridge。",
+        "ID_INVALID_VERSION":        "Hue bridge 软件已过时。请转至 Hue 应用程序中的“设置”部分，更新 Hue bridge。",
+        "ID_NO_GROUP_AVAILABLE":     "Hue bridge 尚未进行娱乐功能设置。要继续，请转至 Hue 应用程序中的“设置”部分，创建“娱乐”设置。",
+        "ID_BRIDGE_BUSY":            "Hue bridge 已在另一个娱乐会话中启用。 ",
+        "ID_STREAMING_DISCONNECTED": "娱乐会话停止。"
+    },
+    "zh-TW": {
+        "ID_PRESS_PUSH_LINK":        " 已找到. 按下 Hue bridge 上的配對按鈕。",
+        "ID_SELECT_GROUP":           "選取要使用的「娛樂」設定。",
+        "ID_NO_BRIDGE_FOUND":        "找不到 Hue bridge。請確定您的 Hue bridge 已連線至家用 Wi-Fi 網路，或手動輸入 IP 位址。",
+        "ID_BRIDGE_NOT_FOUND":       "我們無法連線至您的 Hue bridge。請確定您的 Hue bridge 已連線至家用 Wi-Fi 網路，或搜尋另一個 Hue bridge。",
+        "ID_INVALID_MODEL":          "娛樂功能無法在圓形 Hue bridge 上使用。請使用方形 Hue bridge。",
+        "ID_INVALID_VERSION":        "您的 Hue bridge 軟體已過時。請前往 Hue 應用程式中的設定，以更新 Hue bridge。",
+        "ID_NO_GROUP_AVAILABLE":     "您的 Hue bridge 尚未設定娛樂。若要繼續，請前往 Hue 應用程式中的設定，以建立娛樂設定。",
+        "ID_BRIDGE_BUSY":            "您的 Hue bridge 已在另一個娛樂工作階段中使用。 ",
+        "ID_STREAMING_DISCONNECTED": "娛樂會話停止。"
+    },
+    "da": {
+        "ID_PRESS_PUSH_LINK":        " found. Press the push-link button on the Hue bridge.",
+        "ID_SELECT_GROUP":           "Select an entertainment setup to use.",
+        "ID_NO_BRIDGE_FOUND":        "No Hue bridge was found. Make sure your Hue bridge is connected to your home Wi-Fi network or enter the IP address manually.",
+        "ID_BRIDGE_NOT_FOUND":       "We couldn't connect to your Hue bridge. Make sure your Hue bridge is connected to your home Wi-Fi network or search for another Hue bridge.",
+        "ID_INVALID_MODEL":          "The entertainment feature is not available on the round shaped Hue bridge. Please use the square shaped Hue bridge.",
+        "ID_INVALID_VERSION":        "Your Hue bridge software is out of date. Go to Settings in the Hue app to update your Hue bridge.",
+        "ID_NO_GROUP_AVAILABLE":     "Your Hue bridge is not yet set up for entertainment. To continue, go to settings in the Hue app to create an entertainment setup.",
+        "ID_BRIDGE_BUSY":            "Your Hue bridge is already active in another entertainment session: ",
+        "ID_STREAMING_DISCONNECTED": "Entertainment session stopped."
+    },
+    "fi": {
+        "ID_PRESS_PUSH_LINK":        " found. Press the push-link button on the Hue bridge.",
+        "ID_SELECT_GROUP":           "Select an entertainment setup to use.",
+        "ID_NO_BRIDGE_FOUND":        "No Hue bridge was found. Make sure your Hue bridge is connected to your home Wi-Fi network or enter the IP address manually.",
+        "ID_BRIDGE_NOT_FOUND":       "We couldn't connect to your Hue bridge. Make sure your Hue bridge is connected to your home Wi-Fi network or search for another Hue bridge.",
+        "ID_INVALID_MODEL":          "The entertainment feature is not available on the round shaped Hue bridge. Please use the square shaped Hue bridge.",
+        "ID_INVALID_VERSION":        "Your Hue bridge software is out of date. Go to Settings in the Hue app to update your Hue bridge.",
+        "ID_NO_GROUP_AVAILABLE":     "Your Hue bridge is not yet set up for entertainment. To continue, go to settings in the Hue app to create an entertainment setup.",
+        "ID_BRIDGE_BUSY":            "Your Hue bridge is already active in another entertainment session: ",
+        "ID_STREAMING_DISCONNECTED": "Entertainment session stopped."
+    },
+    "no": {
+        "ID_PRESS_PUSH_LINK":        " found. Press the push-link button on the Hue bridge.",
+        "ID_SELECT_GROUP":           "Select an entertainment setup to use.",
+        "ID_NO_BRIDGE_FOUND":        "No Hue bridge was found. Make sure your Hue bridge is connected to your home Wi-Fi network or enter the IP address manually.",
+        "ID_BRIDGE_NOT_FOUND":       "We couldn't connect to your Hue bridge. Make sure your Hue bridge is connected to your home Wi-Fi network or search for another Hue bridge.",
+        "ID_INVALID_MODEL":          "The entertainment feature is not available on the round shaped Hue bridge. Please use the square shaped Hue bridge.",
+        "ID_INVALID_VERSION":        "Your Hue bridge software is out of date. Go to Settings in the Hue app to update your Hue bridge.",
+        "ID_NO_GROUP_AVAILABLE":     "Your Hue bridge is not yet set up for entertainment. To continue, go to settings in the Hue app to create an entertainment setup.",
+        "ID_BRIDGE_BUSY":            "Your Hue bridge is already active in another entertainment session: ",
+        "ID_STREAMING_DISCONNECTED": "Entertainment session stopped."
+    },
+    "ru": {
+        "ID_PRESS_PUSH_LINK":        " found. Press the push-link button on the Hue bridge.",
+        "ID_SELECT_GROUP":           "Select an entertainment setup to use.",
+        "ID_NO_BRIDGE_FOUND":        "No Hue bridge was found. Make sure your Hue bridge is connected to your home Wi-Fi network or enter the IP address manually.",
+        "ID_BRIDGE_NOT_FOUND":       "We couldn't connect to your Hue bridge. Make sure your Hue bridge is connected to your home Wi-Fi network or search for another Hue bridge.",
+        "ID_INVALID_MODEL":          "The entertainment feature is not available on the round shaped Hue bridge. Please use the square shaped Hue bridge.",
+        "ID_INVALID_VERSION":        "Your Hue bridge software is out of date. Go to Settings in the Hue app to update your Hue bridge.",
+        "ID_NO_GROUP_AVAILABLE":     "Your Hue bridge is not yet set up for entertainment. To continue, go to settings in the Hue app to create an entertainment setup.",
+        "ID_BRIDGE_BUSY":            "Your Hue bridge is already active in another entertainment session: ",
+        "ID_STREAMING_DISCONNECTED": "Entertainment session stopped."
+    },
+    "sw": {
+        "ID_PRESS_PUSH_LINK":        " found. Press the push-link button on the Hue bridge.",
+        "ID_SELECT_GROUP":           "Select an entertainment setup to use.",
+        "ID_NO_BRIDGE_FOUND":        "No Hue bridge was found. Make sure your Hue bridge is connected to your home Wi-Fi network or enter the IP address manually.",
+        "ID_BRIDGE_NOT_FOUND":       "We couldn't connect to your Hue bridge. Make sure your Hue bridge is connected to your home Wi-Fi network or search for another Hue bridge.",
+        "ID_INVALID_MODEL":          "The entertainment feature is not available on the round shaped Hue bridge. Please use the square shaped Hue bridge.",
+        "ID_INVALID_VERSION":        "Your Hue bridge software is out of date. Go to Settings in the Hue app to update your Hue bridge.",
+        "ID_NO_GROUP_AVAILABLE":     "Your Hue bridge is not yet set up for entertainment. To continue, go to settings in the Hue app to create an entertainment setup.",
+        "ID_BRIDGE_BUSY":            "Your Hue bridge is already active in another entertainment session: ",
+        "ID_STREAMING_DISCONNECTED": "Entertainment session stopped."
+    },
+    "tr": {
+        "ID_PRESS_PUSH_LINK":        "Hue bridge'deki push-link düğmesine basın.",
+        "ID_SELECT_GROUP":           "Kullanılacak bir Eğlence kurulumu seçin.",
+        "ID_NO_BRIDGE_FOUND":        "Hue bridge bulunamadı. Hue bridge'in evdeki Wi-Fi ağına bağlı olduğundan emin olun veya IP adresini elle girin.",
+        "ID_BRIDGE_NOT_FOUND":       "Hue bridge'inize bağlantı yapamadık. Hue bridge'in evdeki Wi-Fi ağına bağlı olduğundan emin olun veya başka bir Hue bridge için arama yapın.",
+        "ID_INVALID_MODEL":          "Eğlence özelliği yuvarlak şekilli Hue bridge'de mevcut değil. Lütfen kare şekilli Hue bridge'i kullanın.",
+        "ID_INVALID_VERSION":        "Hue bridge yazılımınız güncel değil. Hue bridge'i güncellemek için Hue uygulamasındaki Ayarlar'a gidin.",
+        "ID_NO_GROUP_AVAILABLE":     "Hue bridge'iniz henüz Eğlence için ayarlanmamız. Devam etmek için Hue uygulamasındaki ayarlara gidip Eğlence kurulumu oluşturun.",
+        "ID_BRIDGE_BUSY":            "Hue bridge'iniz başka bir Eğlence oturumunda zaten etkin durumda: ",
+        "ID_STREAMING_DISCONNECTED": "Eğlence seansı durduruldu."
+    },
+    "pl": {
+        "ID_PRESS_PUSH_LINK":        "Kliknij przycisk z łączem znajdujący się na mostku.",
+        "ID_SELECT_GROUP":           "Wybierz ustawienie Rozrywka.",
+        "ID_NO_BRIDGE_FOUND":        "Nie znaleziono mostka Hue. Upewnij się, że mostek jest połączony z domową siecią Wi-Fi, lub wpisz ręcznie adres IP.",
+        "ID_BRIDGE_NOT_FOUND":       "Nie można połączyć się z mostkiem Hue. Upewnij się, że usługa ta jest połączona z domową siecią Wi-Fi, lub wyszukaj inny mostek Hue.",
+        "ID_INVALID_MODEL":          "Funkcja Rozrywka jest niedostępna na mostku w kształcie koła. Użyj nowego mostka w kształcie kwadratu.",
+        "ID_INVALID_VERSION":        "Oprogramowanie Hue bridge jest nieaktualne. Przejdź do ustawień aplikacji Hue, by zaktualizować aplikację Hue bridge.",
+        "ID_NO_GROUP_AVAILABLE":     "Funkcja Rozrywka nie jest jeszcze dostępna. Aby kontynuować, przejdź do ustawień aplikacji Hue i utwórz ustawienie funkcji Rozrywka.",
+        "ID_BRIDGE_BUSY":            "Usługa Hue bridge jest już aktywna w innej sesji funkcji Rozrywka: ",
+        "ID_STREAMING_DISCONNECTED": "Sesja rozrywkowa została zatrzymana."
+    },
+    "ja": {
+        "ID_PRESS_PUSH_LINK":        "Hue ブリッジのプッシュリンク ボタンを押してください。",
+        "ID_SELECT_GROUP":           "使用するエンターテインメント セットアップを選択してください。",
+        "ID_NO_BRIDGE_FOUND":        "Hue ブリッジが検出されませんでした。Hue ブリッジがホーム Wi-Fi ネットワークに接続されていることを確認するか、手動で IP アドレスを入力してください。",
+        "ID_BRIDGE_NOT_FOUND":       "Hue ブリッジに接続できませんでした。Hue ブリッジがホーム Wi-Fi ネットワークに接続されていることを確認するか、別の Hue ブリッジを検索してください。",
+        "ID_INVALID_MODEL":          "エンターテイメント機能は丸型の Hue ブリッジでは利用できません。 角型の Hue ブリッジを使用してください。",
+        "ID_INVALID_VERSION":        "お使いの Hue ブリッジ ソフトウェアは古いバージョンです。Hue アプリの [設定] に移動して、Hue ブリッジを更新してください。",
+        "ID_NO_GROUP_AVAILABLE":     "お使い Hue ブリッジはエンターテインメント用には設定されていません。続行するには、Hue アプリの [設定] に移動してエンターテイメント設定を作成してください。",
+        "ID_BRIDGE_BUSY":            "お使いの Hue ブリッジはすでに別のエンターテインメント セッションで有効になっています。 ",
+        "ID_STREAMING_DISCONNECTED": "エンターテイメントセッションが中止。"
+    },
+    "ko": {
+        "ID_PRESS_PUSH_LINK":        "Hue bridge의 푸시 링크 버튼을 누르세요.",
+        "ID_SELECT_GROUP":           "사용할 엔터테인먼트 설정을 선택하세요.",
+        "ID_NO_BRIDGE_FOUND":        "Hue bridge를 찾지 못했습니다. Hue bridge가 홈 Wi-Fi 네트워크에 연결되어 있는지 확인하거나 IP 주소를 수동으로 입력하세요.",
+        "ID_BRIDGE_NOT_FOUND":       "Hue bridge를 연결하지 못했습니다. Hue bridge가 홈 Wi-Fi 네트워크에 연결되어 있는지 확인하거나 다른 Hue bridge를 검색하세요.",
+        "ID_INVALID_MODEL":          "원형 Hue bridge에서는 엔터테인먼트 기능을 이용할 수 없습니다. 사각형 Hue bridge를 사용해 주세요.",
+        "ID_INVALID_VERSION":        "Hue bridge 소프트웨어가 최신 상태가 아닙니다. Hue 앱의 환경 설정에서 Hue bridge를 업데이트하세요.",
+        "ID_NO_GROUP_AVAILABLE":     "Hue bridge에 아직 엔터테인먼트 설정이 없습니다. 계속하려면 Hue 앱의 환경 설정에서 엔터테인먼트 설정을 생성하세요.",
+        "ID_BRIDGE_BUSY":            "Hue bridge가 이미 다른 엔터테인먼트 세션에서 활성화되어 있습니다: ",
+        "ID_STREAMING_DISCONNECTED": "연예 오락 세션이 중단됨."
+    }
+}

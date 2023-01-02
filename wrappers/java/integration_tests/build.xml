@@ -1,0 +1,82 @@
+<project name="HueStreamJavaWrappersIntegrationTest" default="main" basedir=".">
+    <description>
+        Create an IntegrationTest project with Ant build script.
+    </description>
+
+    <property name="projectName" value="IntegrationTests" />
+
+    <!-- Java sources -->
+    <property name="src.dir" location="src" />
+
+    <!-- Wrappers & native library -->
+    <property name="lib.dir" value="lib" />
+
+    <!-- Java classes -->
+    <property name="classes.dir" location="classes" />
+
+    <!-- Output, Jar -->
+    <property name="bin.dir" location="bin" />
+
+    <!-- junit output -->
+    <property name="junit.output.dir" value="junit"/>
+
+    <path id="classpath.wrappers">
+        <fileset dir="${lib.dir}" includes="**/*.jar" />
+    </path>
+
+    <target name="compile" description="compile the source ">
+        <mkdir dir="${classes.dir}" />
+
+        <!-- Compile the java code from ${src.dir} into ${classes.dir} -->
+        <javac debug="true" debuglevel="lines,vars,source" includeantruntime="false" srcdir="${src.dir}" destdir="${classes.dir}" classpathref="classpath.wrappers">
+        </javac>
+    </target>
+
+    <target name="jar" depends="compile" description="package, output to JAR">
+
+        <!-- Create the distribution directory -->
+        <mkdir dir="${bin.dir}" />
+
+        <!-- Put everything in ${build} into the {$projectName}-${DSTAMP}.jar file -->
+        <jar jarfile="${bin.dir}/${projectName}.jar" basedir="${classes.dir}" >
+            <zipgroupfileset dir="${lib.dir}" includes="**/*.jar"/>
+        </jar>
+    </target>
+
+    <target name="clean" description="clean up">
+        <delete dir="${classes.dir}" />
+        <delete dir="${bin.dir}" />
+        <delete dir="${junit.output.dir}" />
+    </target>
+
+    <target name="clean-build" depends="clean, jar"/>
+
+    <target name="test" depends="jar" description="Run the JUnit4 tests">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="true" printsummary="withOutAndErr" haltonfailure="no" showoutput="yes">
+            <formatter type="xml"/>
+            <sysproperty key="java.library.path" path="${lib.dir}/native" />
+            <classpath>
+                <path refid="classpath.wrappers"/>
+                <pathelement location="${classes.dir}"/>
+            </classpath>
+            <formatter type="brief" usefile="false" />
+            <jvmarg value="-XX:+CreateMinidumpOnCrash"/>
+            <batchtest todir="${junit.output.dir}">
+                <fileset dir="${src.dir}" includes="com/lighting/huestream/tests/integration/IntegrationTests.java" />
+            </batchtest>
+        </junit>
+    </target>
+
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+    </target>
+
+    <target name="main" depends="clean, test, junitreport"/>
+
+</project>
